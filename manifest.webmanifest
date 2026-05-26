@@ -1,0 +1,16 @@
+{
+  "name": "PanicDrive",
+  "short_name": "PanicDrive",
+  "description": "Companion offline-first per consultazione rapida in Pronto Soccorso.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6fbfc",
+  "theme_color": "#0f7c82",
+  "icons": [
+    {
+      "src": "assets/logo/panicdrive-mark.png",
+      "sizes": "any",
+      "type": "image/png+xml"
+    }
+  ]
+}

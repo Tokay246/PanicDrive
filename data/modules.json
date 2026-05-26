@@ -1,0 +1,40 @@
+{
+  "modules": [
+    {
+      "id": "esami-obiettivi",
+      "route": "esami-obiettivi",
+      "title": "Esami Obiettivi",
+      "description": "Archivio di esami standardizzati, template e frasi rapide.",
+      "icon": "assets/icons/exam.png",
+      "status": "Base pronta",
+      "keywords": ["eo", "obiettivo", "template", "frasi", "visita"]
+    },
+    {
+      "id": "malpractice",
+      "route": "malpractice",
+      "title": "Malpractice Buster",
+      "description": "Schede per patologia con fonti, aggiornamenti e storico.",
+      "icon": "assets/icons/shield.png",
+      "status": "Schema clinico",
+      "keywords": ["linee guida", "patologie", "esc", "aha", "nice", "gold", "gina"]
+    },
+    {
+      "id": "pagine-gialle",
+      "route": "pagine-gialle",
+      "title": "Pagine Gialle d'Urgenza",
+      "description": "Rubrica offline con numeri utili e aggiornamento revisionabile.",
+      "icon": "assets/icons/phonebook.png",
+      "status": "Offline",
+      "keywords": ["numeri", "reparto", "telefono", "urgenze", "orari", "contatti"]
+    },
+    {
+      "id": "future",
+      "route": "future",
+      "title": "Modulo futuro",
+      "description": "Spazio per calcolatori, farmaci, dimissioni, protocolli o manuale.",
+      "icon": "assets/icons/plus.svg",
+      "status": "Placeholder",
+      "keywords": ["calcolatori", "farmaci", "dimissioni", "protocolli", "manuale"]
+    }
+  ]
+}

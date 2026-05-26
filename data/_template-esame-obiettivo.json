@@ -1,0 +1,21 @@
+{
+  "id": "eo-nome",
+  "area": "Area clinica",
+  "title": "Titolo esame obiettivo",
+  "summary": "Descrizione sintetica del template.",
+  "tags": ["tag1", "tag2", "sinonimo"],
+  "sections": [
+    {
+      "id": "sezione-rapida",
+      "title": "Versione rapida",
+      "use_case": "Quando usare questa sezione.",
+      "text": "Testo del template rapido."
+    },
+    {
+      "id": "sezione-completa",
+      "title": "Versione completa",
+      "use_case": "Quando usare questa sezione.",
+      "text": "Testo del template completo."
+    }
+  ]
+}

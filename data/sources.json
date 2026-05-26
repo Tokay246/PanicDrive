@@ -1,0 +1,14 @@
+{
+  "pagine-gialle": {
+    "label": "Import locale Pagine Gialle",
+    "url": "",
+    "format": "json",
+    "notes": "Per dati riservati usare il pulsante Importa Excel/CSV e salvare una copia locale offline sul dispositivo."
+  },
+  "guidelines": {
+    "label": "Manifest linee guida revisionato manualmente",
+    "url": "https://example.org/panicdrive/guidelines-index.json",
+    "format": "json",
+    "notes": "Usare fonti ufficiali, DOI, PubMed, societa scientifiche o repository curati."
+  }
+}

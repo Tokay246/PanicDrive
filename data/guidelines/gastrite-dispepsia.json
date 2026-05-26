@@ -1,0 +1,142 @@
+{
+  "slug": "gastrite-dispepsia",
+  "title": "Gastrite / dispepsia",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-25",
+  "lastManualReview": "non revisionato",
+  "safetyNotice": "**Bozza clinica da revisionare**: in PS la priorita e non perdere SCA, sanguinamento digestivo, perforazione, pancreatite, colecistite, dissezione o addome chirurgico. Questa scheda non sostituisce protocolli locali e consulenza gastroenterologica.",
+  "sources": [
+    {
+      "label": "Management of Dyspepsia",
+      "society": "ACG/CAG",
+      "year": "2017",
+      "reference": "ACG and CAG Clinical Guideline: Management of Dyspepsia",
+      "url": "https://journals.lww.com/ajg/fulltext/2017/07000/acg_and_cag_clinical_guideline__management_of.10.aspx"
+    },
+    {
+      "label": "Treatment of Helicobacter pylori Infection",
+      "society": "ACG",
+      "year": "2024",
+      "reference": "ACG Clinical Guideline: Treatment of Helicobacter pylori Infection",
+      "url": "https://journals.lww.com/ajg/fulltext/2024/09000/acg_clinical_guideline__treatment_of_helicobacter.13.aspx"
+    }
+  ],
+  "definition": "Dolore o fastidio epigastrico prevalente, spesso associato a pienezza, nausea, bruciore o sazieta precoce. 'Gastrite' in PS e spesso un'etichetta provvisoria: prima escludere diagnosi tempo-dipendenti.",
+  "pathophysiology": "Dispepsia funzionale, malattia peptica, H. pylori, FANS/aspirina, reflusso, patologia biliare/pancreatica e cause cardiache possono sovrapporsi. La gestione e guidata da eta, allarmi, rischio emorragico e probabilita di patologia organica.",
+  "etiologyEpidemiology": [
+    "Cause comuni: dispepsia funzionale, GERD, ulcera peptica, H. pylori, FANS, alcol, stress fisiologico, farmaci.",
+    "Cause da non perdere: SCA inferiore, pancreatite, colecistite/colangite, sanguinamento digestivo, perforazione, dissezione aortica, ischemia mesenterica.",
+    "H. pylori e rilevante per dispepsia, ulcera e prevenzione di recidiva; terapia empirica deve seguire resistenze e linee guida aggiornate."
+  ],
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "content": {
+        "segniSintomi": [
+          "Epigastralgia, bruciore, nausea, vomito, pienezza post-prandiale, sazieta precoce.",
+          "Valutare rapporto con pasti, FANS/aspirina/anticoagulanti, alcol, precedenti ulcere, calo ponderale, anemia, melena.",
+          "**Obiettivo in PS**: escludere patologie urgenti, trattare sintomi, identificare allarmi e impostare follow-up o endoscopia quando indicata."
+        ],
+        "redFlags": [
+          "**Dolore toracico/epigastrico con rischio cardiovascolare, diaforesi, dispnea, sincope: ECG e troponine secondo contesto**.",
+          "**Ematemesi, melena, anemia, ipotensione, sincope o anticoagulazione**.",
+          "**Addome peritonitico, dolore improvviso severo, rigidita, aria libera sospetta**.",
+          "**Vomito persistente, disfagia progressiva, calo ponderale, massa, ittero**.",
+          "**Eta elevata o rischio oncologico: non liquidare come gastrite senza percorso**."
+        ],
+        "criteriDiGravita": [
+          "Instabilita emodinamica o sanguinamento.",
+          "Dolore severo/progressivo o segni peritoneali.",
+          "Comorbidita importanti, immunosoppressione, anticoagulanti/antiaggreganti, FANS cronici.",
+          "Fallimento terapia sintomatica o impossibilita alimentazione/idratarsi."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "content": {
+        "primoLivello": [
+          "Parametri vitali, addome, segni di sanguinamento, valutazione cardiovascolare.",
+          "ECG in epigastralgia atipica o paziente a rischio: il cuore ama travestirsi da stomaco.",
+          "Emocromo se sanguinamento, anemia, fragilita o sintomi importanti; creatinina/elettroliti se vomito/disidratazione.",
+          "Lipasi se dolore compatibile con pancreatite.",
+          "Funzionalita epatica e bilirubina se dolore in ipocondrio destro/ittero o sospetto biliare."
+        ],
+        "secondoLivello": [
+          "Ecografia addome se sospetto biliare.",
+          "TC addome se peritonismo, diagnosi chirurgica, complicanza, dolore severo non spiegato.",
+          "Endoscopia urgente se sanguinamento significativo o allarmi rilevanti secondo protocollo.",
+          "Test H. pylori non urgente in PS se paziente stabile, ma da programmare o indicare al follow-up nei candidati."
+        ],
+        "criteriDispepsia": [
+          "ACG/CAG: nei pazienti sotto 60 anni senza allarmi importanti, strategia test-and-treat per H. pylori; se negativo o persistente, trial PPI.",
+          "Eta 60 anni o superiore: considerare endoscopia per escludere patologia organica; eta piu bassa se alto rischio oncologico o allarmi selezionati.",
+          "Allarmi nei giovani non significano endoscopia automatica per tutti, ma richiedono giudizio clinico e percorso."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "content": {
+        "condottaIniziale": [
+          "Se instabile o sanguinamento: ABCDE, accessi venosi, emocromo/coagulazione, terapia e percorso sanguinamento digestivo secondo protocollo.",
+          "Se stabile e senza red flags: antiacido/alginato, PPI o H2 secondo quadro e protocollo; antiemetico se necessario.",
+          "Sospendere/evitare FANS se possibile; valutare gastroprotezione se antiaggreganti/anticoagulanti o rischio ulceroso."
+        ],
+        "hPylori": [
+          "Se H. pylori positivo, ACG 2024 favorisce terapia quadrupla con bismuto ottimizzata per 14 giorni quando suscettibilita antibiotica non nota.",
+          "Evitare schemi con claritromicina o levofloxacina se suscettibilita non dimostrata o rischio resistenza.",
+          "Confermare eradicazione almeno 4 settimane dopo terapia; sospendere PPI e bismuto/antibiotici nei tempi corretti per evitare falsi negativi secondo fonte."
+        ],
+        "ricovero": [
+          "Ricovero/OBI se sanguinamento, anemia significativa, instabilita, dolore persistente severo, vomito incoercibile, sospetto chirurgico o necessita endoscopia urgente.",
+          "Dimissione se stabile, dolore controllato, diagnosi urgenti escluse, terapia e follow-up chiari."
+        ]
+      }
+    },
+    {
+      "title": "Indicazioni al paziente e follow-up",
+      "content": {
+        "educazione": [
+          "Evitare FANS non necessari, alcol e pasti molto irritanti se peggiorano i sintomi.",
+          "Assumere terapia come prescritta; non interrompere antibiotici H. pylori senza contattare medico.",
+          "Programmare MMG/gastroenterologo se sintomi ricorrenti, necessita test H. pylori o endoscopia."
+        ],
+        "quandoTornareInPs": [
+          "**Dolore toracico, dispnea, sudorazione fredda, sincope**.",
+          "**Vomito con sangue, melena, debolezza marcata, svenimento**.",
+          "**Dolore addominale severo o progressivo, febbre, ittero, vomito persistente**."
+        ],
+        "followUp": [
+          "MMG per test H. pylori, trial PPI, revisione farmaci e indicazione endoscopica.",
+          "Gastroenterologia se eta/rischio/allarmi, anemia, sanguinamento, disfagia, calo ponderale o sintomi persistenti."
+        ]
+      }
+    },
+    {
+      "title": "Note pratiche da PS",
+      "content": {
+        "coseDaNonDimenticare": [
+          "**Prima ECG, poi poesia gastrica** se il paziente ha rischio cardiovascolare.",
+          "Melena + epigastralgia + FANS/anticoagulante: non chiamarla gastrite semplice.",
+          "La diagnosi di gastrite in PS spesso e sindromica: lascia un follow-up chiaro.",
+          "H. pylori non e emergenza nella maggior parte dei pazienti stabili, ma va intercettato bene."
+        ],
+        "frasiOperative": [
+          "Epigastralgia/dispepsia valutata; escluse red flags cliniche immediate secondo quadro.",
+          "**Fornite indicazioni su terapia sintomatica, sospensione FANS se appropriata e follow-up per H. pylori/endoscopia**.",
+          "Ritorno in PS raccomandato in caso di sanguinamento, dolore toracico, sincope, febbre, ittero o peggioramento."
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-05-25",
+      "source": "ACG/CAG dyspepsia 2017 e ACG H. pylori 2024",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Prima bozza PanicDrive. Da revisionare per percorsi locali di endoscopia, sanguinamento e terapia H. pylori."
+    }
+  ]
+}

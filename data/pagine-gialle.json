@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0-demo",
+  "updatedAt": "2026-05-20",
+  "source": {
+    "label": "Dataset locale dimostrativo",
+    "url": "",
+    "note": "Sostituire con dati ospedalieri verificati prima dell'uso."
+  },
+  "entries": [
+    {
+      "id": "radiologia-ps",
+      "name": "Radiologia PS",
+      "department": "Diagnostica per immagini",
+      "location": "Piano 0, area emergenza",
+      "urgent": "0000",
+      "ward": "0001",
+      "clinic": "",
+      "secretariat": "0002",
+      "fax": "0003",
+      "email": "radiologia.ps@example.local",
+      "synonyms": ["radiops", "rx", "tac", "tc", "radiologia"],
+      "tags": ["radiops", "imaging", "tc", "rx"],
+      "notes": "Numeri dimostrativi: sostituire con contatti locali verificati."
+    },
+    {
+      "id": "otorino",
+      "name": "Otorinolaringoiatria",
+      "department": "ORL",
+      "location": "Piano 2, ambulatori chirurgici",
+      "urgent": "0010",
+      "ward": "0011",
+      "clinic": "0012",
+      "secretariat": "0013",
+      "fax": "",
+      "email": "orl@example.local",
+      "synonyms": ["orl", "otorino", "epistassi", "vertigini"],
+      "tags": ["orl", "otorino", "consulenza"],
+      "notes": "Verificare reperibilita e fasce orarie con protocollo locale."
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "slug": "nome-patologia",
+  "title": "Nome patologia",
+  "version": "0.1.0",
+  "updatedAt": "YYYY-MM-DD",
+  "lastManualReview": "non revisionato",
+  "reviewStatus": "bozza | revisionato | da-verificare | obsoleto",
+  "clinicalSetting": [
+    "Pronto Soccorso",
+    "Medicina d'urgenza",
+    "Osservazione breve",
+    "Preospedaliero se applicabile"
+  ],
+  "safetyNotice": "Strumento di supporto clinico: non sostituisce giudizio clinico, protocolli locali, consulenza specialistica e verifica della fonte originale. Le indicazioni devono essere adattate a paziente, setting, risorse disponibili e controindicazioni.",
+  "sources": [
+    {
+      "label": "Linea guida principale",
+      "society": "ESC/AHA/ERC/NICE/GOLD/GINA",
+      "year": "YYYY",
+      "reference": "DOI, PMID, URL ufficiale o riferimento bibliografico",
+      "sourceType": "linea-guida | consensus | trial | protocollo-locale | revisione",
+      "usedFor": [
+        "diagnosi",
+        "trattamento acuto",
+        "trattamento cronico",
+        "follow-up"
+      ],
+      "priority": 1,
+      "notes": "Indicare eventuali differenze rispetto ad altre linee guida."
+    }
+  ],
+  "sourceComparison": [
+    {
+      "topic": "Esempio: timing cardioversione",
+      "sourceA": "ESC 2024",
+      "recommendationA": "Esempio: soglia 24 ore.",
+      "sourceB": "ACC/AHA/HRS 2023",
+      "recommendationB": "Esempio: soglia 48 ore o durata ignota.",
+      "practicalInterpretation": "**Mostrare entrambe le opzioni** e indicare quale viene usata nel protocollo locale."
+    }
+  ],
+  "introBox": {
+    "collapsible": true,
+    "defaultOpen": false,
+    "title": "Definizione, fisiopatologia, eziologia ed epidemiologia",
+    "content": {
+      "definition": "Massimo 2-3 righe, linguaggio clinico chiaro.",
+      "pathophysiology": "Fisiopatologia essenziale, orientata al razionale diagnostico-terapeutico.",
+      "etiologyEpidemiology": [
+        "Cause principali.",
+        "Fattori di rischio.",
+        "Dati epidemiologici essenziali se rilevanti."
+      ],
+      "classification": [
+        "Classificazioni clinicamente utili.",
+        "Sottotipi con impatto diagnostico-terapeutico."
+      ],
+      "clinicalPearl": "**Messaggio formativo chiave**: una frase utile da ricordare in PS."
+    }
+  },
+  "quickLook": {
+    "title": "Sintesi operativa in 30 secondi",
+    "items": [
+      "**Prima domanda**: il paziente è stabile o instabile?",
+      "**Seconda domanda**: serve trattamento immediato, monitoraggio o dimissione protetta?",
+      "**Terza domanda**: quale decisione non posso sbagliare?"
+    ]
+  },
+  "criticalActions": [
+    {
+      "trigger": "Condizione clinica critica",
+      "action": "**Azione immediata**",
+      "rationale": "Perché va fatta subito.",
+      "doNotMiss": "Errore da evitare."
+    }
+  ],
+  "algorithm": {
+    "title": "Algoritmo decisionale principale",
+    "steps": [
+      {
+        "id": "step-1",
+        "question": "Domanda clinica iniziale.",
+        "ifYes": {
+          "action": "**Azione se sì**.",
+          "next": "step-2"
+        },
+        "ifNo": {
+          "action": "**Azione se no**.",
+          "next": "step-3"
+        },
+        "notes": [
+          "Nota pratica.",
+          "Nota medico-legale o di sicurezza."
+        ]
+      }
+    ]
+  },
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "type": "clinical",
+      "content": {
+        "segni": [
+          "..."
+        ],
+        "sintomi": [
+          "..."
+        ],
+        "redFlags": [
+          "**Elemento importante** da tenere in evidenza."
+        ],
+        "criteriDiGravita": [
+          "..."
+        ],
+        "obiettiviInPs": [
+          "**Stabilizzare** il paziente.",
+          "**Identificare red flags**.",
+          "**Decidere dimissione, OBI, ricovero o intensiva**."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "type": "clinical",
+      "content": {
+        "primoLivello": [
+          "..."
+        ],
+        "secondoLivello": [
+          "..."
+        ],
+        "scoreCriteriDiagnostici": [
+          "..."
+        ],
+        "diagnosiDifferenziali": [
+          "..."
+        ],
+        "diagnosticaDaNonRitardare": [
+          "**Esame tempo-dipendente** se presente."
+        ],
+        "diagnosticaDaNonFareRoutinariamente": [
+          "Esami non indicati salvo sospetto specifico."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "type": "clinical",
+      "content": {
+        "condottaIniziale": [
+          "..."
+        ],
+        "algoritmoOperativo": [
+          "**Se instabile** → trattamento immediato.",
+          "**Se stabile** → stratificare rischio, durata, controindicazioni e setting."
+        ],
+        "farmaciDosaggiVie": [
+          {
+            "drug": "Nome farmaco",
+            "dose": "Dose",
+            "route": "EV/PO/IM/SC",
+            "when": "Quando usarlo",
+            "avoidIf": [
+              "Controindicazione principale"
+            ],
+            "monitoring": [
+              "Parametri da monitorare"
+            ],
+            "notes": "**Nota pratica importante**"
+          }
+        ],
+        "procedure": [
+          {
+            "name": "Procedura",
+            "indications": [
+              "..."
+            ],
+            "contraindications": [
+              "..."
+            ],
+            "technicalDetails": [
+              "..."
+            ],
+            "postProcedure": [
+              "..."
+            ]
+          }
+        ],
+        "controindicazioni": [
+          "..."
+        ],
+        "ricoveroMonitoraggioIntensiva": [
+          "..."
+        ],
+        "dischargeCriteria": [
+          "..."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento cronico",
+      "type": "clinical",
+      "content": {
+        "farmaci": [
+          "..."
+        ],
+        "dosaggi": [
+          "..."
+        ],
+        "followUp": [
+          "..."
+        ],
+        "prevenzioneSecondaria": [
+          "..."
+        ],
+        "invioSpecialista": [
+          "..."
+        ],
+        "targets": [
+          "Target clinici o laboratoristici."
+        ]
+      }
+    },
+    {
+      "title": "Indicazioni non farmacologiche per il paziente",
+      "type": "patientInstructions",
+      "content": {
+        "educazioneSanitaria": [
+          "..."
+        ],
+        "stileDiVita": [
+          "..."
+        ],
+        "segnaliAllarme": [
+          "..."
+        ],
+        "quandoTornareInPs": [
+          "**Tornare subito in PS** se compaiono segni/sintomi specifici."
+        ],
+        "frasiDimissione": [
+          "Frase pronta per lettera di dimissione."
+        ]
+      }
+    },
+    {
+      "title": "Note pratiche da Pronto Soccorso",
+      "type": "psPracticalNotes",
+      "content": {
+        "coseDaNonDimenticare": [
+          "..."
+        ],
+        "erroriComuni": [
+          "**Errore frequente**: ..."
+        ],
+        "redFlags": [
+          "..."
+        ],
+        "frasiOperativeRapide": [
+          "Usa **grassetto** per passaggi cruciali."
+        ],
+        "consultoSpecialistico": [
+          "Quando chiamare specialista e cosa chiedere."
+        ],
+        "documentazioneMedicoLegale": [
+          "**Documentare** indicazione, controindicazioni, consenso, fonte/protocollo e rivalutazione."
+        ]
+      }
+    }
+  ],
+  "updatePolicy": {
+    "canAutoOverwrite": false,
+    "requiresManualReview": true,
+    "showDiffBeforeUpdate": true,
+    "allowedUpdateActions": [
+      "accetta aggiornamento",
+      "rifiuta aggiornamento",
+      "accetta solo alcune modifiche",
+      "mantieni versione precedente",
+      "salva come bozza da revisionare"
+    ],
+    "diffFields": [
+      "sezione modificata",
+      "vecchio testo",
+      "nuovo testo",
+      "fonte",
+      "data fonte",
+      "livello confidenza",
+      "warning"
+    ]
+  },
+  "history": [
+    {
+      "date": "YYYY-MM-DD",
+      "source": "Fonte o revisione locale",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Prima compilazione o modifica rilevante.",
+      "reviewer": "non indicato"
+    }
+  ]
+}

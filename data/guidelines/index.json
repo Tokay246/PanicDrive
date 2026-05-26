@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0-demo",
+  "updatedAt": "2026-05-25",
+  "pathologies": [
+    {
+      "slug": "fibrillazione-atriale",
+      "file": "fibrillazione-atriale.json",
+      "title": "Fibrillazione atriale",
+      "area": "Cardiologia",
+      "status": "Schema dimostrativo da revisionare",
+      "lastManualReview": "non revisionato",
+      "tags": ["fa", "aritmia", "cardiologia", "anticoagulazione"]
+    },
+    {
+      "slug": "polmonite-comunita",
+      "file": "polmonite-comunita.json",
+      "title": "Polmonite comunitaria",
+      "area": "Infettivologia / Pneumologia",
+      "status": "Bozza da revisionare",
+      "lastManualReview": "non revisionato",
+      "tags": ["cap", "polmonite", "antibiotici", "sepsi", "dispnea"]
+    },
+    {
+      "slug": "embolia-polmonare",
+      "file": "embolia-polmonare.json",
+      "title": "Embolia polmonare",
+      "area": "Emergenza cardiovascolare",
+      "status": "Bozza da revisionare",
+      "lastManualReview": "non revisionato",
+      "tags": ["ep", "pe", "dispnea", "dolore toracico", "anticoagulazione", "trombolisi"]
+    },
+    {
+      "slug": "diarrea-acuta",
+      "file": "diarrea-acuta.json",
+      "title": "Diarrea acuta",
+      "area": "Gastroenterologia / Infettivologia",
+      "status": "Bozza da revisionare",
+      "lastManualReview": "non revisionato",
+      "tags": ["diarrea", "gastroenterite", "disidratazione", "antibiotici", "stec"]
+    },
+    {
+      "slug": "gastrite-dispepsia",
+      "file": "gastrite-dispepsia.json",
+      "title": "Gastrite / dispepsia",
+      "area": "Gastroenterologia",
+      "status": "Bozza da revisionare",
+      "lastManualReview": "non revisionato",
+      "tags": ["gastrite", "dispepsia", "epigastralgia", "h pylori", "ppi"]
+    }
+  ]
+}

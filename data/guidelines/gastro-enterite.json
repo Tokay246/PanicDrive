@@ -1,0 +1,22 @@
+{
+  "slug": "gastro-enterite",
+  "title": "Gastroenterite acuta",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-25",
+  "lastManualReview": "non revisionato",
+  "safetyNotice": "Alias non indicizzato: usare la scheda Diarrea acuta come riferimento principale.",
+  "sources": [],
+  "definition": "Scheda alias mantenuta per evitare file vuoti nella cartella. La scheda operativa e data/guidelines/diarrea-acuta.json.",
+  "pathophysiology": "",
+  "etiologyEpidemiology": [],
+  "boxes": [],
+  "history": [
+    {
+      "date": "2026-05-25",
+      "source": "Pulizia scaffold PanicDrive",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "File vuoto convertito in alias non indicizzato."
+    }
+  ]
+}

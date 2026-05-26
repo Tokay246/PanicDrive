@@ -1,0 +1,697 @@
+{
+  "slug": "fibrillazione-atriale",
+  "title": "Fibrillazione atriale",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-20",
+  "lastManualReview": "non revisionato",
+  "reviewStatus": "bozza",
+  "clinicalSetting": [
+    "Pronto Soccorso",
+    "Medicina d'urgenza",
+    "OBI",
+    "Cardiologia"
+  ],
+  "safetyNotice": "**Strumento di supporto clinico**: non sostituisce giudizio clinico, protocolli locali, consulenza cardiologica e verifica della fonte originale. In particolare, timing della cardioversione, anticoagulazione e scelta dei farmaci devono essere adattati a rischio tromboembolico, rischio emorragico, funzione renale, durata dell'aritmia, comorbidità e disponibilità di imaging.",
+  "sources": [
+    {
+      "label": "Linea guida principale europea",
+      "society": "ESC/EACTS",
+      "year": "2024",
+      "reference": "2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+      "sourceType": "linea-guida",
+      "usedFor": [
+        "diagnosi",
+        "stratificazione",
+        "cardioversione",
+        "anticoagulazione",
+        "trattamento cronico"
+      ],
+      "priority": 1,
+      "notes": "Usa soglia **24 ore** per cardioversione precoce senza anticoagulazione efficace ≥3 settimane o TOE/TEE negativa."
+    },
+    {
+      "label": "Linea guida principale statunitense",
+      "society": "ACC/AHA/ACCP/HRS",
+      "year": "2023",
+      "reference": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Patients With Atrial Fibrillation",
+      "sourceType": "linea-guida",
+      "usedFor": [
+        "diagnosi",
+        "cardioversione",
+        "anticoagulazione",
+        "controllo frequenza",
+        "controllo ritmo"
+      ],
+      "priority": 2,
+      "notes": "Mantiene soglia pratica **≥48 ore o durata ignota** per anticoagulazione pre-cardioversione o imaging."
+    },
+    {
+      "label": "Algoritmo cardioversione elettrica",
+      "society": "AHA ACLS",
+      "year": "2025",
+      "reference": "Electrical Cardioversion Algorithm",
+      "sourceType": "algoritmo",
+      "usedFor": [
+        "cardioversione elettrica sincronizzata",
+        "energia shock"
+      ],
+      "priority": 3,
+      "notes": "Per FA: **cardioversione sincronizzata 200 J biphasic** come schema operativo ACLS moderno; verificare defibrillatore e protocollo locale."
+    }
+  ],
+  "sourceComparison": [
+    {
+      "topic": "Cardioversione precoce in FA stabile senza anticoagulazione efficace pregressa",
+      "sourceA": "ESC 2024",
+      "recommendationA": "**Se durata FA >24 ore o incerta** → evitare cardioversione precoce senza **≥3 settimane di anticoagulazione efficace** oppure **TOE/TEE negativa**.",
+      "sourceB": "ACC/AHA/ACCP/HRS 2023",
+      "recommendationB": "**Se durata FA ≥48 ore o incerta** → anticoagulazione efficace per **≥3 settimane** oppure imaging per escludere trombo prima della cardioversione.",
+      "practicalInterpretation": "Nel contesto europeo/ESC, usare approccio più conservativo: **cut-off 24 ore**. Mostrare alert se il protocollo locale usa ancora 48 ore."
+    },
+    {
+      "topic": "Ecocardiografia prima di cardioversione",
+      "sourceA": "ESC 2024",
+      "recommendationA": "Per esclusione trombo prima della cardioversione: **TOE/TEE**, non TTE.",
+      "sourceB": "Uso pratico PS",
+      "recommendationB": "La **TTE** è utile per cardiopatia strutturale, funzione ventricolare, valvulopatie e scompenso, ma **non basta** per escludere trombo in auricola sinistra.",
+      "practicalInterpretation": "Nel template usare campi separati: `TTEIndicazioni` e `TEE_TOEIndicazioni`."
+    }
+  ],
+  "introBox": {
+    "collapsible": true,
+    "defaultOpen": false,
+    "title": "Definizione, fisiopatologia, eziologia ed epidemiologia",
+    "content": {
+      "definition": "**Tachiaritmia sopraventricolare** caratterizzata da attivazione atriale caotica, assenza di onde P organizzate e intervalli RR irregolari, con possibile risposta ventricolare rapida, normale o lenta.",
+      "pathophysiology": "La FA nasce dall'interazione tra **trigger elettrici**, spesso localizzati nelle vene polmonari, e **substrato atriale vulnerabile**: dilatazione, fibrosi, infiammazione, rimodellamento elettrico e strutturale. Il razionale terapeutico deriva da tre problemi: **instabilità emodinamica**, **sintomi/controllo del ritmo o della frequenza**, **rischio tromboembolico**.",
+      "etiologyEpidemiology": [
+        "**Cardiache**: ipertensione, cardiopatia ischemica, scompenso cardiaco, valvulopatie, cardiomiopatie, post-cardiochirurgia, miocardite/pericardite.",
+        "**Non cardiache**: ipertiroidismo, infezioni/sepsi, embolia polmonare, BPCO/riacutizzazione respiratoria, anemia, disionie, insufficienza renale, abuso di alcol, farmaci/stimolanti.",
+        "**Fattori di rischio**: età, ipertensione, obesità, diabete, OSAS, alcol, sedentarietà, malattia renale cronica.",
+        "**Epidemiologia essenziale**: prevalenza crescente con l'età; rilevante impatto su ictus, scompenso, ricoveri e mortalità."
+      ],
+      "classification": [
+        "**Prima diagnosi**: FA mai documentata prima.",
+        "**Parossistica**: termina spontaneamente o con intervento entro 7 giorni.",
+        "**Persistente**: durata >7 giorni o richiede cardioversione dopo tale intervallo.",
+        "**Persistente di lunga durata**: continua per >12 mesi quando si decide strategia di controllo del ritmo.",
+        "**Permanente**: FA accettata da paziente e medico, senza ulteriore strategia di controllo del ritmo."
+      ],
+      "clinicalPearl": "**La prima domanda non è 'che farmaco do?', ma 'questo paziente è instabile per la FA?'**. Il resto viene dopo, con meno adrenalina e più neuroni."
+    }
+  },
+  "quickLook": {
+    "title": "Sintesi operativa in 30 secondi",
+    "items": [
+      "**1. Instabile?** Shock, ischemia miocardica, edema polmonare, sincope/alterazione coscienza, ipotensione persistente attribuibile alla FA → **cardioversione elettrica sincronizzata immediata**.",
+      "**2. Stabile?** Conferma ECG, valuta durata FA, trigger reversibili, rischio tromboembolico, rischio emorragico, controllo frequenza vs ritmo.",
+      "**3. Durata FA secondo ESC 2024**: se **≤24 ore** e basso rischio, possibile cardioversione precoce; se **>24 ore o ignota**, cardioversione solo dopo **≥3 settimane anticoagulazione efficace** oppure **TOE/TEE negativa**, salvo instabilità.",
+      "**4. Dopo cardioversione**: valutare anticoagulazione per almeno **4 settimane** e anticoagulazione a lungo termine secondo rischio tromboembolico.",
+      "**5. Non dimenticare la causa**: infezione, ischemia, embolia polmonare, tireotossicosi, scompenso, disionie, alcol, farmaci."
+    ]
+  },
+  "criticalActions": [
+    {
+      "trigger": "FA con instabilità emodinamica attribuibile all'aritmia",
+      "action": "**Cardioversione elettrica sincronizzata immediata**.",
+      "rationale": "In instabilità, il rischio immediato di shock, ischemia o edema polmonare supera il rischio tromboembolico procedurale; anticoagulazione appena possibile se non controindicata.",
+      "doNotMiss": "**Non ritardare la cardioversione** per completare score, esami o consulenze se il paziente è realmente instabile."
+    },
+    {
+      "trigger": "FA stabile con durata >24 ore o durata non chiara secondo ESC 2024",
+      "action": "**Non cardiovertire elettivamente subito** senza anticoagulazione efficace ≥3 settimane o TOE/TEE negativa.",
+      "rationale": "La cardioversione può mobilizzare trombi atriali o favorire tromboembolismo nel periodo di stunning atriale post-ripristino del ritmo.",
+      "doNotMiss": "**TTE non equivale a TOE/TEE** per esclusione trombo in auricola sinistra."
+    },
+    {
+      "trigger": "FA + preeccitazione/WPW sospetta o QRS larghi irregolari",
+      "action": "**Evitare bloccanti del nodo AV** e richiedere gestione urgente specialistica; se instabile → cardioversione sincronizzata.",
+      "rationale": "Il blocco del nodo AV può favorire conduzione sulla via accessoria e degenerazione aritmica.",
+      "doNotMiss": "**Non usare verapamil, diltiazem, beta-bloccanti, digossina o amiodarone alla cieca** se sospetta FA preeccitata."
+    }
+  ],
+  "algorithm": {
+    "title": "Algoritmo decisionale FA in Pronto Soccorso",
+    "steps": [
+      {
+        "id": "fa-1",
+        "question": "ECG conferma FA o flutter atriale?",
+        "ifYes": {
+          "action": "**Procedi a valutazione clinica immediata**: ABCDE, parametri vitali, monitor, accesso venoso, ECG 12 derivazioni, valutazione instabilità.",
+          "next": "fa-2"
+        },
+        "ifNo": {
+          "action": "Riconsidera diagnosi: TPSV, flutter regolare, tachicardia atriale, extrasistolia, tachicardia ventricolare, artefatti.",
+          "next": "stop"
+        },
+        "notes": [
+          "**FA**: ritmo irregolarmente irregolare, assenza di onde P organizzate.",
+          "**Flutter**: possibile conduzione regolare o variabile; gestione simile per anticoagulazione/cardioversione."
+        ]
+      },
+      {
+        "id": "fa-2",
+        "question": "Il paziente è emodinamicamente instabile per la FA?",
+        "ifYes": {
+          "action": "**Cardioversione elettrica sincronizzata immediata**. Sedazione se possibile senza ritardare. Energia pratica: **200 J biphasic sincronizzati**, oppure secondo defibrillatore/protocollo locale. Anticoagulare appena possibile se non controindicato.",
+          "next": "fa-3-unstable"
+        },
+        "ifNo": {
+          "action": "Paziente stabile: definisci durata FA, rischio tromboembolico, trigger reversibili, strategia controllo frequenza vs ritmo.",
+          "next": "fa-4-stable"
+        },
+        "notes": [
+          "Instabilità: **shock/ipotensione persistente**, ischemia miocardica, edema polmonare, sincope/alterazione coscienza attribuibile alla FA.",
+          "Frequenza elevata da sola non basta: chiedersi se la FA è **causa** o **conseguenza** del quadro clinico."
+        ]
+      },
+      {
+        "id": "fa-3-unstable",
+        "question": "Dopo cardioversione il paziente si stabilizza?",
+        "ifYes": {
+          "action": "Monitoraggio, ricerca trigger, valutazione anticoagulazione, consulenza cardiologica se indicata, decisione ricovero/OBI/dimissione protetta.",
+          "next": "fa-10-post-cv"
+        },
+        "ifNo": {
+          "action": "**Rivaluta diagnosi e cause alternative**: shock settico, SCA, EP, tamponamento, disionie, emorragia, insufficienza respiratoria. Ripeti cardioversione/escalation secondo protocollo e coinvolgi rianimazione/cardiologia.",
+          "next": "fa-11-critical"
+        },
+        "notes": [
+          "La cardioversione può fallire se il driver è una causa sistemica non trattata.",
+          "**Non trattare il monitor ignorando il paziente**: sport olimpico molto praticato, risultati discutibili."
+        ]
+      },
+      {
+        "id": "fa-4-stable",
+        "question": "Durata FA nota e ≤24 ore secondo approccio ESC 2024?",
+        "ifYes": {
+          "action": "Valuta cardioversione precoce se sintomatico o indicata, dopo valutazione rischio tromboembolico, controindicazioni e preferenza clinica. Considera anticoagulazione peri/post-cardioversione in base a rischio.",
+          "next": "fa-5-early-cv"
+        },
+        "ifNo": {
+          "action": "Se FA **>24 ore o durata ignota**: evitare cardioversione elettiva immediata senza **≥3 settimane di anticoagulazione efficace** oppure **TOE/TEE negativa**.",
+          "next": "fa-6-delayed-or-tee"
+        },
+        "notes": [
+          "Campo da mostrare nell'app: **Fonte scelta**. ESC 2024 usa 24 h; ACC/AHA/HRS 2023 usa soglia ≥48 h/durata ignota.",
+          "**Durata incerta = trattare come durata lunga**, a meno di documentazione affidabile."
+        ]
+      },
+      {
+        "id": "fa-5-early-cv",
+        "question": "Cardioversione precoce indicata e sicura?",
+        "ifYes": {
+          "action": "Scegli cardioversione elettrica o farmacologica. In PS, elettrica spesso più rapida ed efficace se serve ripristino immediato del ritmo. Per elettrica: **sincronizzata**, sedazione procedurale, monitoraggio, energia secondo protocollo locale; opzione pratica **200 J biphasic**.",
+          "next": "fa-10-post-cv"
+        },
+        "ifNo": {
+          "action": "Controllo frequenza, anticoagulazione se indicata, trattamento trigger, rivalutazione e follow-up/cardiologia.",
+          "next": "fa-8-rate-control"
+        },
+        "notes": [
+          "Considerare cardioversione precoce soprattutto se paziente molto sintomatico, primo episodio, FA recente documentata, basso rischio procedurale.",
+          "**Non cardiovertire per comodità logistica**: il cuore non apprezza la burocrazia clinica."
+        ]
+      },
+      {
+        "id": "fa-6-delayed-or-tee",
+        "question": "È disponibile TOE/TEE per escludere trombo atriale/auricola sinistra?",
+        "ifYes": {
+          "action": "Se **TOE/TEE negativa** e non ci sono controindicazioni, si può procedere a cardioversione con anticoagulazione peri-procedurale e post-procedurale secondo rischio.",
+          "next": "fa-7-tee-result"
+        },
+        "ifNo": {
+          "action": "Programmare strategia differita: **anticoagulazione efficace per almeno 3 settimane**, poi cardioversione se ancora indicata. Nel frattempo controllo frequenza e trattamento cause.",
+          "next": "fa-8-rate-control"
+        },
+        "notes": [
+          "**TOE/TEE negativa** non elimina la necessità di ragionare su anticoagulazione dopo cardioversione.",
+          "Se trombo presente: **non cardiovertire elettivamente**, anticoagulare e rivalutare con imaging."
+        ]
+      },
+      {
+        "id": "fa-7-tee-result",
+        "question": "TOE/TEE mostra trombo atriale o in auricola sinistra?",
+        "ifYes": {
+          "action": "**No cardioversione elettiva**. Avvia/ottimizza anticoagulazione, controllo frequenza, rivalutazione cardiologica e ripetizione imaging secondo percorso specialistico.",
+          "next": "fa-8-rate-control"
+        },
+        "ifNo": {
+          "action": "Procedere a cardioversione se clinicamente indicata, con anticoagulazione peri/post-procedurale e documentazione del razionale.",
+          "next": "fa-10-post-cv"
+        },
+        "notes": [
+          "Documentare: data/ora imaging, esito, fonte decisionale, anticoagulazione prevista.",
+          "**Trombo = stop alla cardioversione elettiva**. Semplice, persino per noi mammiferi."
+        ]
+      },
+      {
+        "id": "fa-8-rate-control",
+        "question": "Serve controllo della frequenza?",
+        "ifYes": {
+          "action": "Obiettivo iniziale pragmatico: ridurre frequenza e sintomi senza precipitare ipotensione/scompenso. Scegli farmaco in base a FE, pressione, congestione, broncospasmo, ischemia, comorbidità.",
+          "next": "fa-9-drug-choice"
+        },
+        "ifNo": {
+          "action": "Osservazione, trattamento trigger, stratificazione tromboembolica, decisione setting e follow-up.",
+          "next": "fa-12-disposition"
+        },
+        "notes": [
+          "Non inseguire un numero perfetto se il paziente sta migliorando.",
+          "Cercare e trattare cause: febbre, dolore, ipovolemia, anemia, ipossia, sepsi, EP, SCA, tireotossicosi."
+        ]
+      },
+      {
+        "id": "fa-9-drug-choice",
+        "question": "Scelta farmaco per controllo frequenza",
+        "ifYes": {
+          "action": "Usa il blocco farmaci: beta-bloccante o calcio-antagonista non diidropiridinico se appropriati; digossina in selezionati, soprattutto scompenso/ipotensione; amiodarone in casi selezionati con attenzione perché può cardiovertire e quindi porta tema anticoagulazione.",
+          "next": "fa-12-disposition"
+        },
+        "ifNo": {
+          "action": "Se controindicazioni o fallimento: consulenza cardiologica/rianimatoria, considerare strategia alternativa.",
+          "next": "fa-11-critical"
+        },
+        "notes": [
+          "**Verapamil/diltiazem da evitare in severa disfunzione sistolica o scompenso acuto con FE ridotta**.",
+          "**Beta-bloccanti cautela** in ipotensione, broncospasmo severo, shock, BAV avanzato.",
+          "**Digossina** meno efficace nello stato adrenergico elevato; attenzione a funzione renale e tossicità.",
+          "**Amiodarone** può favorire conversione a ritmo sinusale: non usarlo come finta terapia neutra se anticoagulazione/cardioversione sono problematiche."
+        ]
+      },
+      {
+        "id": "fa-10-post-cv",
+        "question": "Gestione dopo cardioversione",
+        "ifYes": {
+          "action": "Monitorare recidiva, complicanze sedazione/shock, ECG post-procedura, correzione trigger. Valutare anticoagulazione per **almeno 4 settimane** dopo cardioversione e a lungo termine secondo rischio tromboembolico.",
+          "next": "fa-12-disposition"
+        },
+        "ifNo": {
+          "action": "Se recidiva precoce o fallimento, rivalutare causa, strategia e setting.",
+          "next": "fa-11-critical"
+        },
+        "notes": [
+          "**Dopo cardioversione non finisce il problema**: inizia il rischio di recidiva e la gestione tromboembolica.",
+          "Documentare consenso, sedazione, energia, numero shock, esito, complicanze, piano anticoagulante."
+        ]
+      },
+      {
+        "id": "fa-11-critical",
+        "question": "Quadro complesso o refrattario",
+        "ifYes": {
+          "action": "**Coinvolgere cardiologia/rianimazione**. Valutare terapia intensiva/subintensiva se shock, edema polmonare, ischemia, necessità di farmaci EV o monitoraggio stretto.",
+          "next": "stop"
+        },
+        "ifNo": {
+          "action": "Proseguire percorso standard.",
+          "next": "fa-12-disposition"
+        },
+        "notes": [
+          "La FA può essere il campanello, non l'incendio.",
+          "Non dimettere se instabilità recente, trigger non controllato, ischemia, scompenso, ipossia, importante squilibrio elettrolitico o dubbio diagnostico."
+        ]
+      },
+      {
+        "id": "fa-12-disposition",
+        "question": "Dimissione, OBI o ricovero?",
+        "ifYes": {
+          "action": "Dimissione solo se stabile, causa gestita o esclusa, frequenza/sintomi controllati, piano anticoagulante definito, follow-up chiaro, istruzioni di ritorno in PS.",
+          "next": "stop"
+        },
+        "ifNo": {
+          "action": "OBI/ricovero se controllo incompleto, comorbidità, trigger significativo, rischio elevato, necessità di monitoraggio o terapia EV.",
+          "next": "stop"
+        },
+        "notes": [
+          "**La dimissione senza piano anticoagulante/follow-up è un invito scritto al caos**.",
+          "Inserire in lettera: durata presunta FA, strategia scelta, score/rischio, terapia, segnali d'allarme."
+        ]
+      }
+    ]
+  },
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "type": "clinical",
+      "content": {
+        "segni": [
+          "Ritmo irregolarmente irregolare.",
+          "Tachicardia, frequenza normale o bradicardia se malattia del nodo/conduzione/farmaci.",
+          "Possibili segni di scompenso: crepitii, edemi, turgore giugulare, ipossia.",
+          "Possibili segni di ipoperfusione: cute fredda, alterazione stato mentale, oliguria, ipotensione."
+        ],
+        "sintomi": [
+          "Palpitazioni.",
+          "Dispnea.",
+          "Astenia marcata.",
+          "Dolore toracico o discomfort.",
+          "Vertigine, presincope/sincope.",
+          "Intolleranza allo sforzo.",
+          "Talvolta asintomatica e riscontro occasionale."
+        ],
+        "redFlags": [
+          "**Instabilità emodinamica attribuibile alla FA**.",
+          "**Dolore toracico ischemico o alterazioni ECG ischemiche**.",
+          "**Edema polmonare acuto**.",
+          "**Sincope o alterazione dello stato mentale**.",
+          "**FA con preeccitazione/WPW sospetta**.",
+          "**QRS largo irregolare: non trattare come semplice FA a QRS stretto**.",
+          "**Sospetto trigger maggiore: sepsi, embolia polmonare, SCA, tireotossicosi, grave anemia, disionia severa**."
+        ],
+        "criteriDiGravita": [
+          "PAS persistentemente bassa o shock.",
+          "Frequenza molto elevata con segni di ipoperfusione.",
+          "Scompenso acuto o ipossia.",
+          "Ischemia miocardica.",
+          "Comorbidità importanti: FE severamente ridotta, valvulopatia significativa, insufficienza renale avanzata, fragilità.",
+          "Necessità di terapia EV continua o monitoraggio stretto."
+        ],
+        "obiettiviInPs": [
+          "**Capire se cardiovertire subito**.",
+          "**Controllare frequenza/sintomi se stabile**.",
+          "**Prevenire ictus e tromboembolismo**.",
+          "**Identificare e trattare trigger reversibili**.",
+          "**Decidere setting sicuro: dimissione, OBI, ricovero, intensiva**."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "type": "clinical",
+      "content": {
+        "primoLivello": [
+          "**ECG 12 derivazioni**: confermare FA/flutter, QRS stretto/largo, ischemia, preeccitazione, QT.",
+          "**Parametri vitali seriati**: PA, FC, SpO2, temperatura, FR.",
+          "**Anamnesi mirata**: esordio certo/incerto, episodi precedenti, anticoagulanti, aderenza, sanguinamenti, cardiopatia, trigger.",
+          "**Esame obiettivo cardiovascolare e respiratorio**.",
+          "Emocromo, creatinina/eGFR, elettroliti inclusi K/Mg se disponibili, glicemia, funzionalità epatica se si pianifica anticoagulazione/farmaci.",
+          "Troponina se dolore toracico, ischemia sospetta, instabilità o contesto compatibile.",
+          "TSH non sempre urgente in PS, ma utile se sospetto clinico o nuova FA senza causa evidente.",
+          "Rx torace/EGA/ecografia bedside se dispnea, scompenso, ipossia o sospetto causa respiratoria."
+        ],
+        "secondoLivello": [
+          "**TTE**: funzione ventricolare, valvulopatie, dimensioni atriali, cardiopatia strutturale, versamento; utile per stratificazione, non per escludere con sicurezza trombo in auricola.",
+          "**TOE/TEE**: indicata se si vuole escludere trombo atriale/auricola sinistra prima di cardioversione in FA >24 h o durata incerta secondo ESC 2024.",
+          "Angio-TC torace se sospetto embolia polmonare secondo probabilità clinica.",
+          "Ecografia polmonare/cardiaca bedside se instabilità, scompenso o diagnosi differenziale urgente.",
+          "Holter/monitoraggio ambulatoriale se episodi intermittenti non documentati o follow-up."
+        ],
+        "scoreCriteriDiagnostici": [
+          "**CHA2DS2-VA/CHA2DS2-VASc** per rischio tromboembolico secondo fonte/protocollo adottato.",
+          "**HAS-BLED** o valutazione strutturata del rischio emorragico: non serve per negare anticoagulazione in automatico, ma per correggere fattori modificabili.",
+          "Valutare EHRA symptom score se utile per burden sintomatologico.",
+          "Classificare tipo FA: prima diagnosi, parossistica, persistente, persistente lunga durata, permanente."
+        ],
+        "diagnosiDifferenziali": [
+          "Flutter atriale.",
+          "TPSV.",
+          "Tachicardia atriale multifocale.",
+          "Tachicardia ventricolare, soprattutto se QRS largo.",
+          "Extrasistolia frequente scambiata per FA.",
+          "Artefatto ECG.",
+          "FA preeccitata/WPW."
+        ],
+        "diagnosticaDaNonRitardare": [
+          "**ECG immediato** se instabilità, dolore toracico, dispnea importante o sincope.",
+          "**Valutazione ischemia/scompenso/EP/sepsi** se il quadro non è spiegato solo dalla FA."
+        ],
+        "diagnosticaDaNonFareRoutinariamente": [
+          "Troponine seriali in ogni FA senza contesto ischemico: evitare automatismi da catena di montaggio.",
+          "D-dimero/angio-TC senza probabilità clinica coerente.",
+          "TOE/TEE se non si sta pianificando cardioversione o se la strategia è già anticoagulazione differita, salvo indicazione specialistica."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "type": "clinical",
+      "content": {
+        "condottaIniziale": [
+          "**ABCDE**, monitor, accesso venoso, ECG 12 derivazioni.",
+          "Correggere ipossia, dolore, febbre, ipovolemia, disionie, anemia, infezione o altro trigger.",
+          "Stabilire se la FA è causa dell'instabilità o epifenomeno di un'altra patologia.",
+          "**Se instabile per FA → cardioversione elettrica sincronizzata immediata**.",
+          "**Se stabile → controllo frequenza o ritmo secondo durata, sintomi, rischio e controindicazioni**."
+        ],
+        "algoritmoOperativo": [
+          "**FA instabile, qualunque durata** → cardioversione elettrica sincronizzata immediata; non attendere 3 settimane/TOE se il paziente sta collassando.",
+          "**FA stabile ≤24 h secondo ESC 2024** → possibile cardioversione precoce se indicata, valutando rischio tromboembolico e anticoagulazione peri/post.",
+          "**FA stabile >24 h o durata incerta secondo ESC 2024** → no cardioversione elettiva immediata senza **≥3 settimane anticoagulazione efficace** oppure **TOE/TEE negativa**.",
+          "**FA stabile ≥48 h o durata ignota secondo ACC/AHA/HRS 2023** → anticoagulazione efficace ≥3 settimane oppure imaging prima della cardioversione.",
+          "**Trombo a TOE/TEE** → no cardioversione elettiva; anticoagulazione e rivalutazione.",
+          "**FA preeccitata/WPW sospetta** → evitare bloccanti nodo AV; se instabile cardiovertire."
+        ],
+        "farmaciDosaggiVie": [
+          {
+            "drug": "Metoprololo",
+            "dose": "Esempio operativo da verificare localmente: piccoli boli EV titolati; oppure PO se stabile e non urgente.",
+            "route": "EV/PO",
+            "when": "Controllo frequenza in paziente stabile, pressione adeguata, assenza di scompenso acuto severo o broncospasmo severo.",
+            "avoidIf": [
+              "Shock/ipotensione significativa.",
+              "BAV avanzato senza pacing.",
+              "Broncospasmo severo.",
+              "Scompenso acuto grave o bassa portata."
+            ],
+            "monitoring": [
+              "PA, FC, ECG, segni di scompenso, broncospasmo."
+            ],
+            "notes": "**Titolare**, non sparare boli come se fossero coriandoli farmacologici."
+          },
+          {
+            "drug": "Diltiazem o verapamil",
+            "dose": "Dose secondo protocollo locale.",
+            "route": "EV/PO",
+            "when": "Controllo frequenza in FA stabile a QRS stretto, senza severa disfunzione sistolica nota o scompenso acuto.",
+            "avoidIf": [
+              "**FE ridotta severa o scompenso acuto**.",
+              "Ipotensione.",
+              "BAV avanzato.",
+              "FA preeccitata/WPW."
+            ],
+            "monitoring": [
+              "PA, FC, ECG, segni di peggioramento emodinamico."
+            ],
+            "notes": "**Non usare alla cieca se sospetta HFrEF importante**."
+          },
+          {
+            "drug": "Digossina",
+            "dose": "Dose secondo protocollo locale, funzione renale, età e peso.",
+            "route": "EV/PO",
+            "when": "Opzione in pazienti selezionati con scompenso/ipotensione dove beta-bloccanti o calcio-antagonisti sono problematici.",
+            "avoidIf": [
+              "Intossicazione digitalica.",
+              "Grave insufficienza renale senza aggiustamento.",
+              "FA preeccitata/WPW."
+            ],
+            "monitoring": [
+              "Funzione renale, K, ECG, livelli se terapia cronica/sospetta tossicità."
+            ],
+            "notes": "Meno efficace se tono adrenergico elevato, ad esempio sepsi, dolore, agitazione."
+          },
+          {
+            "drug": "Amiodarone",
+            "dose": "Dose secondo protocollo locale.",
+            "route": "EV/PO",
+            "when": "Strategia selezionata per controllo ritmo o frequenza in contesti specifici, spesso con cardiopatia strutturale/scompenso, preferibilmente con supervisione esperta.",
+            "avoidIf": [
+              "QT lungo importante.",
+              "Bradicardia/BAV non protetto.",
+              "Interazioni rilevanti.",
+              "Cautela se durata FA >24 h/ignota senza adeguata copertura perché può cardiovertire."
+            ],
+            "monitoring": [
+              "ECG, QT, PA, FC, funzione tiroidea/epatica se prosecuzione."
+            ],
+            "notes": "**Può cardiovertire**: non è una bacchetta magica neutra."
+          },
+          {
+            "drug": "Anticoagulazione",
+            "dose": "Secondo farmaco scelto, eGFR, peso, età, interazioni, rischio emorragico e indicazione.",
+            "route": "PO/SC/EV",
+            "when": "Prevenzione tromboembolica peri-cardioversione e a lungo termine se rischio indicato.",
+            "avoidIf": [
+              "Sanguinamento attivo maggiore.",
+              "Controindicazioni specifiche.",
+              "Interazioni o insufficienza renale severa da valutare."
+            ],
+            "monitoring": [
+              "Hb, piastrine, creatinina/eGFR, sanguinamenti, aderenza."
+            ],
+            "notes": "**Non ridurre dose DOAC se non ci sono criteri specifici**: sottodosare espone a ictus evitabili."
+          }
+        ],
+        "procedure": [
+          {
+            "name": "Cardioversione elettrica sincronizzata",
+            "indications": [
+              "**Instabilità emodinamica attribuibile alla FA**.",
+              "FA sintomatica recente in paziente stabile se strategia rhythm control appropriata.",
+              "Fallimento/controindicazione a cardioversione farmacologica quando indicata."
+            ],
+            "contraindications": [
+              "Cardioversione elettiva in FA >24 h o durata incerta senza anticoagulazione efficace ≥3 settimane o TOE/TEE negativa secondo ESC 2024.",
+              "Trombo atriale/auricola sinistra noto.",
+              "Assenza di consenso/sedazione adeguata se procedura elettiva e paziente stabile, salvo emergenza."
+            ],
+            "technicalDetails": [
+              "**Modalità sincronizzata ON**.",
+              "Monitor, ossigeno, accesso venoso, materiale vie aeree e farmaci sedazione disponibili.",
+              "Sedazione procedurale se tempo e condizioni lo permettono.",
+              "Energia pratica: **200 J biphasic** secondo algoritmo ACLS moderno o protocollo locale; in alternativa schema escalativo secondo dispositivo/protocollo.",
+              "Posizionamento placche antero-laterale o antero-posteriore secondo protocollo e qualità contatto.",
+              "Verificare ritmo e parametri dopo ogni shock."
+            ],
+            "postProcedure": [
+              "ECG post-cardioversione.",
+              "Monitoraggio recidiva e complicanze.",
+              "Piano anticoagulante.",
+              "Documentazione: indicazione, consenso se possibile, sedazione, energia, numero shock, esito, complicanze."
+            ]
+          }
+        ],
+        "controindicazioni": [
+          "**Bloccanti nodo AV controindicati in FA preeccitata/WPW sospetta**.",
+          "**Calcio-antagonisti non diidropiridinici da evitare in HFrEF severa/scompenso acuto**.",
+          "**Cardioversione elettiva da evitare se durata lunga/incerta senza adeguata anticoagulazione o TOE/TEE negativa**.",
+          "**Anticoagulazione da valutare attentamente in sanguinamento attivo o rischio emorragico estremo**."
+        ],
+        "ricoveroMonitoraggioIntensiva": [
+          "Ricovero/subintensiva/intensiva se instabilità, shock, edema polmonare, ischemia, necessità di farmaci EV, grave trigger sottostante, ipossia, scompenso acuto.",
+          "OBI se controllo frequenza incompleto, necessità di rivalutazione, correzione trigger, avvio terapia e monitoraggio.",
+          "Dimissione possibile solo se stabile, sintomi controllati, piano anticoagulante/follow-up definito, causa grave esclusa o gestita."
+        ],
+        "dischargeCriteria": [
+          "Emodinamica stabile.",
+          "Sintomi risolti o nettamente migliorati.",
+          "Frequenza accettabile o strategia chiara.",
+          "Nessuna red flag attiva.",
+          "Anticoagulazione valutata e documentata.",
+          "Follow-up cardiologico/MMG programmabile.",
+          "Istruzioni chiare di ritorno in PS."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento cronico",
+      "type": "clinical",
+      "content": {
+        "farmaci": [
+          "**Anticoagulanti orali** se rischio tromboembolico indicato.",
+          "Farmaci per controllo frequenza: beta-bloccanti, calcio-antagonisti non diidropiridinici se appropriati, digossina in selezionati.",
+          "Farmaci antiaritmici per controllo ritmo solo dopo valutazione cardiologica e profilo del paziente.",
+          "Terapia delle comorbidità: ipertensione, scompenso, ischemia, obesità, OSAS, diabete, BPCO."
+        ],
+        "dosaggi": [
+          "DOAC secondo scheda tecnica, eGFR, età, peso, interazioni e criteri di riduzione specifici.",
+          "**Evitare sottodosaggio non giustificato**.",
+          "Controllare funzione renale periodicamente, più spesso se anziano, fragile o IRC."
+        ],
+        "followUp": [
+          "Controllo clinico precoce dopo nuova diagnosi o accesso in PS.",
+          "Valutazione cardiologica per strategia rhythm/rate control, ecocardiogramma, burden aritmico e indicazione ad ablazione se appropriata.",
+          "Rivalutare sintomi, frequenza, aderenza, sanguinamenti, eventi embolici, funzione renale."
+        ],
+        "prevenzioneSecondaria": [
+          "**Riduzione rischio ictus** con anticoagulazione quando indicata.",
+          "Controllo pressione arteriosa.",
+          "Riduzione peso se sovrappeso/obesità.",
+          "Trattamento OSAS.",
+          "Riduzione/stop alcol.",
+          "Attività fisica adattata.",
+          "Ottimizzazione scompenso, diabete, dislipidemia e malattia coronarica."
+        ],
+        "invioSpecialista": [
+          "Prima diagnosi con necessità di impostazione strategia.",
+          "FA sintomatica ricorrente.",
+          "Scompenso, valvulopatia, cardiopatia strutturale.",
+          "Difficoltà nella scelta anticoagulante.",
+          "Recidive nonostante terapia.",
+          "Possibile indicazione ad ablazione.",
+          "Sospetta FA preeccitata o aritmie complesse."
+        ],
+        "targets": [
+          "Riduzione sintomi.",
+          "Prevenzione tromboembolica.",
+          "Riduzione ricoveri.",
+          "Controllo comorbidità.",
+          "Strategia condivisa con paziente: ritmo vs frequenza."
+        ]
+      }
+    },
+    {
+      "title": "Indicazioni non farmacologiche per il paziente",
+      "type": "patientInstructions",
+      "content": {
+        "educazioneSanitaria": [
+          "Spiegare che la FA è un'aritmia frequente ma non banale: il problema principale spesso è il **rischio di ictus**.",
+          "Spiegare bene terapia anticoagulante, aderenza, sanguinamenti da segnalare e interazioni.",
+          "Consegnare istruzioni scritte se possibile."
+        ],
+        "stileDiVita": [
+          "Controllo pressione.",
+          "Riduzione peso se indicato.",
+          "Limitare alcol, soprattutto binge drinking.",
+          "Valutare russamento/OSAS.",
+          "Attività fisica regolare compatibile con quadro clinico.",
+          "Evitare stimolanti o farmaci non necessari che favoriscono tachicardia."
+        ],
+        "segnaliAllarme": [
+          "**Dolore toracico**.",
+          "**Dispnea importante o peggioramento rapido**.",
+          "**Sincope o quasi sincope**.",
+          "**Debolezza improvvisa, difficoltà a parlare, asimmetria facciale, deficit neurologici**.",
+          "**Sanguinamento importante se in anticoagulante**.",
+          "**Palpitazioni persistenti con malessere marcato**."
+        ],
+        "quandoTornareInPs": [
+          "**Tornare subito in PS** per dolore toracico, dispnea severa, sincope, sintomi neurologici, sanguinamento importante, peggioramento rapido o frequenza molto elevata associata a malessere.",
+          "Rientrare se compaiono effetti avversi rilevanti della terapia o impossibilità ad assumere anticoagulante."
+        ],
+        "frasiDimissione": [
+          "Paziente valutato per fibrillazione atriale. Al momento stabile. Sono stati discussi terapia, rischio tromboembolico, segnali di allarme e necessità di follow-up.",
+          "**In caso di dolore toracico, dispnea importante, sincope, sintomi neurologici o sanguinamento rilevante, tornare immediatamente in PS.**"
+        ]
+      }
+    },
+    {
+        
+      }
+  ],
+  "updatePolicy": {
+    "canAutoOverwrite": false,
+    "requiresManualReview": true,
+    "showDiffBeforeUpdate": true,
+    "allowedUpdateActions": [
+      "accetta aggiornamento",
+      "rifiuta aggiornamento",
+      "accetta solo alcune modifiche",
+      "mantieni versione precedente",
+      "salva come bozza da revisionare"
+    ],
+    "diffFields": [
+      "sezione modificata",
+      "vecchio testo",
+      "nuovo testo",
+      "fonte",
+      "data fonte",
+      "livello confidenza",
+      "warning"
+    ],
+    "clinicalWarnings": [
+      "Se la fonte cambia timing della cardioversione, mostrare alert ad alta priorità.",
+      "Se la fonte cambia dosaggi o controindicazioni farmacologiche, richiedere revisione manuale obbligatoria.",
+      "Se la fonte è secondaria o incompleta, salvare solo come bozza."
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-05-20",
+      "source": "Prima bozza strutturale basata su ESC 2024, ACC/AHA/HRS 2023 e algoritmo cardioversione AHA/ACLS",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Creata struttura algoritmica per FA orientata a PS. Da revisionare manualmente prima dell'uso clinico.",
+      "reviewer": "non indicato"
+    }
+  ]
+}

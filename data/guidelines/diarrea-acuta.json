@@ -1,0 +1,147 @@
+{
+  "slug": "diarrea-acuta",
+  "title": "Diarrea acuta",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-25",
+  "lastManualReview": "non revisionato",
+  "safetyNotice": "**Bozza clinica da revisionare**: supporto per PS, non sostituisce giudizio clinico. Antibiotici, test microbiologici, isolamento e gestione dei fragili devono seguire protocolli locali e indicazioni di sanita pubblica.",
+  "sources": [
+    {
+      "label": "Diagnosis and Management of Infectious Diarrhea",
+      "society": "IDSA",
+      "year": "2017",
+      "reference": "Clinical Practice Guidelines for the Diagnosis and Management of Infectious Diarrhea",
+      "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+    },
+    {
+      "label": "Travelers' Diarrhea",
+      "society": "CDC Yellow Book",
+      "year": "2026",
+      "reference": "Health Information for International Travel",
+      "url": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travelers-diarrhea.html"
+    }
+  ],
+  "definition": "Emissione di feci liquide o non formate, in genere almeno tre scariche nelle 24 ore, con durata inferiore a 14 giorni se acuta.",
+  "pathophysiology": "Meccanismi secretivi, osmotici, infiammatori o tossinici causano perdita di acqua/elettroliti. La priorita in PS e distinguere forme autolimitate da disidratazione, colite invasiva, sepsi, HUS, C. difficile e addome chirurgico.",
+  "etiologyEpidemiology": [
+    "Cause frequenti: virus, tossinfezioni alimentari, batteri enteroinvasivi, parassiti in casi persistenti o da viaggio.",
+    "Fattori chiave: viaggio, antibiotici recenti, ricovero/strutture, immunosoppressione, contatti, cibo a rischio, acqua non sicura, sangue nelle feci.",
+    "Molte forme non richiedono antibiotici; il trattamento principale e reidratazione e valutazione del rischio."
+  ],
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "content": {
+        "segniSintomi": [
+          "Numero scariche, sangue/muco, febbre, vomito, dolore addominale, tenesmo, durata, diuresi.",
+          "Segni di disidratazione: sete, mucose asciutte, tachicardia, ipotensione ortostatica, oliguria, confusione, refill rallentato.",
+          "**Obiettivo in PS**: correggere volume/elettroliti, identificare red flags e decidere chi testare, trattare o ricoverare."
+        ],
+        "redFlags": [
+          "**Shock, ipotensione, alterazione stato mentale, oliguria**.",
+          "**Sangue nelle feci, febbre alta, dolore severo o segni peritonitici**.",
+          "**Immunosoppressione, anziano fragile, gravidanza, comorbidita rilevanti**.",
+          "**Diarrea dopo antibiotici o ricovero: pensare C. difficile**.",
+          "**Sospetto STEC/HUS: diarrea emorragica, anemia/emolisi, piastrinopenia, danno renale**."
+        ],
+        "criteriDiGravita": [
+          "Disidratazione moderata-severa o impossibilita a mantenere idratazione orale.",
+          "Sepsi o tossicita sistemica.",
+          "Dolore addominale localizzato/progressivo, peritonismo, megacolon tossico sospetto.",
+          "Persistenza oltre 14 giorni o diarrea ricorrente senza diagnosi."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "content": {
+        "primoLivello": [
+          "Parametri vitali, stato idratazione, addome, valutazione diuresi.",
+          "Elettroliti, creatinina, emocromo se disidratazione, fragilita, febbre, sangue, sepsi o ricovero.",
+          "Test feci per Salmonella, Shigella, Campylobacter, Yersinia, C. difficile e STEC se febbre, sangue/muco, crampi severi, dolorabilita importante o sepsi.",
+          "C. difficile se diarrea dopo antibiotici o associata ad assistenza sanitaria; campione di feci liquide.",
+          "Emocolture se sepsi, immunocompromesso, febbre sistemica importante o sospetto enterica."
+        ],
+        "secondoLivello": [
+          "Imaging se peritonismo, dolore severo/localizzato, sospetto megacolon tossico, perforazione, ischemia o diagnosi chirurgica.",
+          "Parassitologia o pannelli mirati se diarrea persistente, viaggio, immunosoppressione o esposizioni specifiche.",
+          "Considerare cause non infettive se durata oltre 14 giorni: IBD, IBS post-infettiva, farmaci, ischemia, malassorbimento."
+        ],
+        "daEvitare": [
+          "Non usare leucociti fecali/lactoferrina come test per stabilire eziologia acuta.",
+          "Non fare antibiotico empirico in ogni diarrea acquosa senza viaggio recente o condizioni di rischio.",
+          "Evitare antibiotici se sospetto STEC produttore di Shiga tossina, per rischio HUS."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "content": {
+        "reidratazione": [
+          "**ORS** per disidratazione lieve-moderata quando possibile.",
+          "Cristalloidi EV se shock, vomito incoercibile, disidratazione severa, alterazione coscienza o fallimento orale.",
+          "Correggere potassio, sodio e insufficienza renale prerenale secondo controlli."
+        ],
+        "farmaciSintomatici": [
+          "Antiemetico se vomito impedisce reidratazione, secondo protocollo e QT/rischi.",
+          "Loperamide puo essere considerata in adulto stabile senza febbre alta o diarrea emorragica.",
+          "**Evitare antimotilita da soli se sangue nelle feci o febbre importante**."
+        ],
+        "antibiotici": [
+          "La maggior parte delle diarree acquose acute senza viaggio recente non richiede antibiotico empirico.",
+          "Considerare empirico se immunocompromesso con malattia severa e diarrea emorragica, sepsi o quadro di diarrea del viaggiatore moderata-severa secondo protocollo.",
+          "Per diarrea del viaggiatore severa/febbrile o dissenteria, CDC indica spesso azitromicina come opzione preferita; adattare a contesto, QT e resistenze.",
+          "Se patogeno identificato, modificare o sospendere antibiotico in base a risultato e quadro clinico."
+        ],
+        "ricovero": [
+          "Ricovero/OBI se disidratazione severa, AKI, alterazioni elettrolitiche, sepsi, fragilita, immunosoppressione, dolore importante, impossibilita idratazione orale.",
+          "Isolamento/precauzioni da contatto se sospetto C. difficile, outbreak o patogeni trasmissibili secondo protocollo."
+        ]
+      }
+    },
+    {
+      "title": "Indicazioni al paziente e follow-up",
+      "content": {
+        "educazione": [
+          "Reidratazione frequente a piccoli sorsi; ORS se scariche numerose o paziente fragile.",
+          "Dieta leggera secondo tolleranza; evitare alcol e alimenti che peggiorano sintomi.",
+          "Igiene mani, evitare preparazione cibo per altri finche sintomatico, attenzione a comunita/lavori a rischio."
+        ],
+        "quandoTornareInPs": [
+          "**Sangue nelle feci, febbre persistente, dolore addominale severo, svenimento/confusione**.",
+          "**Riduzione marcata urine, sete intensa, vomito incoercibile, peggioramento rapido**.",
+          "**Sintomi oltre 3-7 giorni senza miglioramento o oltre 14 giorni** secondo quadro."
+        ],
+        "followUp": [
+          "MMG/controllo se fragile, terapia antibiotica iniziata, esami in attesa o sintomi persistenti.",
+          "Richiamo se colture/pannelli positivi richiedono modifica terapia o segnalazione."
+        ]
+      }
+    },
+    {
+      "title": "Note pratiche da PS",
+      "content": {
+        "coseDaNonDimenticare": [
+          "**La terapia e spesso acqua e sali, non eroismo antibiotico**.",
+          "Sangue + dolore + AKI/piastrine basse: pensare STEC/HUS.",
+          "Diarrea dopo antibiotico: pensare C. difficile anche se il paziente dice 'sara un virus'.",
+          "Controlla farmaci: metformina, lassativi, antibiotici, colchicina, magnesio, PPI e altri possono contribuire."
+        ],
+        "frasiOperative": [
+          "Quadro compatibile con diarrea acuta; valutati idratazione, red flags e indicazione a test microbiologici.",
+          "**Priorita alla reidratazione e alla rivalutazione clinica**.",
+          "Antibiotico empirico non indicato/indicato secondo criteri clinici e protocollo locale."
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-05-25",
+      "source": "IDSA infectious diarrhea 2017 e CDC Yellow Book 2026",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Prima bozza PanicDrive. Da revisionare per protocolli locali, C. difficile e gestione outbreak."
+    }
+  ]
+}

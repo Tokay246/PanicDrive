@@ -1,0 +1,140 @@
+{
+  "slug": "embolia-polmonare",
+  "title": "Embolia polmonare",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-25",
+  "lastManualReview": "non revisionato",
+  "safetyNotice": "**Bozza clinica da revisionare**: non sostituisce giudizio clinico, protocollo locale, consulenza cardiologica/pneumologica/rianimatoria e valutazione del rischio emorragico. Anticoagulazione, trombolisi e procedure invasive richiedono verifica locale.",
+  "sources": [
+    {
+      "label": "Acute Pulmonary Embolism Diagnosis and Management",
+      "society": "ESC/ERS",
+      "year": "2019",
+      "reference": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-pulmonary-embolism-diagnosis-and-management-of/"
+    }
+  ],
+  "definition": "Ostruzione parziale o completa del circolo arterioso polmonare, di solito da tromboembolismo venoso, con spettro clinico da reperto incidentale a shock ostruttivo.",
+  "pathophysiology": "Il trombo aumenta resistenze vascolari polmonari e post-carico del ventricolo destro. La prognosi dipende soprattutto da instabilita emodinamica, danno/disfunzione ventricolare destra, biomarcatori e comorbidita.",
+  "etiologyEpidemiology": [
+    "Origine frequente da TVP arti inferiori o pelvi.",
+    "Fattori di rischio: chirurgia, immobilizzazione, neoplasia, gravidanza/puerperio, estrogeni, trombofilia, precedente VTE, infezione/infiammazione, cateteri.",
+    "La presentazione puo essere sfumata: dispnea, dolore toracico pleuritico, sincope, tachicardia, emottisi, ipossia o shock."
+  ],
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "content": {
+        "segniSintomi": [
+          "Dispnea improvvisa o inspiegata, dolore toracico pleuritico, sincope/presincope, emottisi, tachicardia.",
+          "Ipotensione, shock, ipossia, segni di TVP, dolore o edema monolaterale arto inferiore.",
+          "**Obiettivo in PS**: stimare probabilita pre-test, confermare/escludere EP, stratificare rischio, iniziare anticoagulazione o reperfusione quando indicata."
+        ],
+        "redFlags": [
+          "**Shock o ipotensione persistente**: EP ad alto rischio fino a prova contraria se quadro compatibile.",
+          "**Sincope con ipossia/tachicardia o segni di disfunzione ventricolo destro**.",
+          "**Arresto cardiaco/PEA con sospetto EP**.",
+          "**Controindicazione ad anticoagulazione in EP probabile o confermata**.",
+          "**Gravidanza, neoplasia, sanguinamento attivo o recente procedura maggiore**."
+        ],
+        "criteriDiGravita": [
+          "Alto rischio: instabilita emodinamica.",
+          "Intermedio: stabile ma con disfunzione ventricolare destra e/o biomarcatori positivi.",
+          "Basso rischio: stabile, basso PESI/sPESI, nessuna disfunzione VD rilevante, buon contesto per gestione sicura."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "content": {
+        "primoLivello": [
+          "Valutare probabilita clinica con Wells/Geneva o gestalt documentata.",
+          "Se probabilita bassa/intermedia: D-dimero con soglia appropriata, anche age-adjusted secondo protocollo.",
+          "Se probabilita alta o instabile: imaging rapido senza affidarsi al D-dimero.",
+          "ECG, emogas se ipossia/distress, troponina/BNP per stratificazione, creatinina per contrasto e terapia.",
+          "Ecografia compressiva arti inferiori se sospetta TVP o se angio-TC non immediata/controindicata."
+        ],
+        "secondoLivello": [
+          "Angio-TC polmonare come test principale se fattibile.",
+          "Ecocardiografia bedside in instabilita: segni di sovraccarico VD possono guidare urgenza, ma non escludono EP se negativi.",
+          "Scintigrafia V/Q in pazienti selezionati se TC non indicata o gravidanza secondo percorso locale.",
+          "Ricercare diagnosi alternative: SCA, dissezione aortica, pneumotorace, polmonite, scompenso, pericardite."
+        ],
+        "score": [
+          "**Wells/Geneva** per probabilita pre-test.",
+          "**PERC** solo in paziente a bassissimo rischio e nel contesto corretto.",
+          "**PESI/sPESI** per rischio e dimissibilita, insieme a imaging/biomarcatori e contesto.",
+          "**Hestia** se percorso locale di gestione ambulatoriale EP a basso rischio."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "content": {
+        "condottaIniziale": [
+          "ABCDE, ossigeno se ipossia, monitor, accessi venosi, fluidi con cautela se sospetta disfunzione VD, vasopressori se shock secondo protocollo.",
+          "Se probabilita alta e basso rischio emorragico, considerare anticoagulazione precoce mentre si completa diagnostica, se non controindicata.",
+          "Stabilire rischio: alto/intermedio/basso."
+        ],
+        "anticoagulazione": [
+          "**Paziente stabile**: anticoagulazione secondo protocollo; DOAC spesso preferiti se eleggibile e non ci sono controindicazioni.",
+          "**Instabile, grave IRC, procedure previste o alto rischio di deterioramento**: eparina non frazionata puo essere preferibile per titolabilita/reversibilita.",
+          "LMWH/fondaparinux opzioni in molti pazienti stabili; attenzione a funzione renale, peso, gravidanza, neoplasia e sanguinamento."
+        ],
+        "reperfusione": [
+          "**EP ad alto rischio con shock/ipotensione**: valutare trombolisi sistemica se non controindicata.",
+          "Se trombolisi controindicata o fallita: considerare embolectomia chirurgica o trattamento percutaneo dove disponibile.",
+          "EP intermedia: monitoraggio stretto; reperfusione di rescue se deterioramento emodinamico."
+        ],
+        "ricoveroMonitoraggioIntensiva": [
+          "Intensiva/subintensiva per alto rischio o intermedio-alto, instabilita, ossigeno elevato, disfunzione VD importante, biomarcatori positivi e rischio di deterioramento.",
+          "Ricovero per comorbidita, dolore/ipossia, rischio emorragico, diagnosi complessa, necessaria terapia parenterale.",
+          "Gestione ambulatoriale solo se basso rischio, stabile, contesto affidabile, terapia e follow-up garantiti."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento cronico e follow-up",
+      "content": {
+        "durata": [
+          "Durata minima tipica almeno 3 mesi; estensione dipende da provocata/non provocata, rischio recidiva, rischio emorragico, neoplasia e preferenze.",
+          "Rivalutare anticoagulazione, funzione renale, aderenza, interazioni e sanguinamenti."
+        ],
+        "followUp": [
+          "Follow-up precoce per controllo terapia e sintomi.",
+          "Valutare dispnea persistente, limitazione funzionale o sospetto ipertensione polmonare tromboembolica cronica.",
+          "Educare su segni di recidiva e sanguinamento."
+        ],
+        "quandoInviare": [
+          "EP ad alto/intermedio rischio, recidive, neoplasia, gravidanza, trombofilia selezionata, sanguinamenti, sospetta CTEPH.",
+          "Dubbio su durata anticoagulazione o scelta farmaco."
+        ]
+      }
+    },
+    {
+      "title": "Note pratiche da PS",
+      "content": {
+        "coseDaNonDimenticare": [
+          "**D-dimero non serve se la probabilita clinica e alta**.",
+          "**Instabilita + sospetto EP = ecocardio bedside e gestione tempo-dipendente**.",
+          "Non dimettere solo per una TC positiva 'piccola' senza stratificare rischio e contesto.",
+          "Documentare rischio emorragico prima di trombolisi/anticoagulazione."
+        ],
+        "frasiOperative": [
+          "Probabilita clinica di embolia polmonare valutata; percorso diagnostico impostato secondo rischio.",
+          "**Anticoagulazione avviata/valutata secondo protocollo locale**, dopo bilancio rischio trombotico-emorragico.",
+          "Paziente stratificato per rischio emodinamico e indicazione a monitoraggio/ricovero/dimissione protetta."
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-05-25",
+      "source": "ESC/ERS 2019 acute pulmonary embolism",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Prima bozza PanicDrive. Da adattare a protocollo locale per anticoagulazione, trombolisi e percorsi low-risk."
+    }
+  ]
+}

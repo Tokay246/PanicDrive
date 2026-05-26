@@ -1,0 +1,147 @@
+{
+  "slug": "polmonite-comunita",
+  "title": "Polmonite comunitaria",
+  "version": "0.1.0",
+  "updatedAt": "2026-05-25",
+  "lastManualReview": "non revisionato",
+  "safetyNotice": "**Bozza clinica da revisionare**: usare solo come supporto. Antibiotici, dosaggi, setting e durata devono seguire protocollo locale, epidemiologia locale, allergie, gravidanza, funzione renale, interazioni e consulenza specialistica quando indicata.",
+  "sources": [
+    {
+      "label": "Diagnosis and Treatment of Adults with Community-acquired Pneumonia",
+      "society": "ATS/IDSA",
+      "year": "2019",
+      "reference": "Official Clinical Practice Guideline, Am J Respir Crit Care Med 2019;200:e45-e67",
+      "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-cap-in-adults"
+    },
+    {
+      "label": "CAP Clinical Pathway",
+      "society": "ATS/IDSA",
+      "year": "aggiornato 2023",
+      "reference": "Implementation tools collegati alla linea guida ATS/IDSA",
+      "url": "https://www.thoracic.org/statements/guideline-implementation-tools/diagnosis-and-treatment-of-cap.php"
+    }
+  ],
+  "definition": "Infezione acuta del parenchima polmonare acquisita fuori dall'ospedale o entro breve tempo dall'arrivo, con sintomi respiratori e infiltrato compatibile all'imaging.",
+  "pathophysiology": "Inalazione o aspirazione di patogeni respiratori con risposta infiammatoria alveolare. Il rischio clinico dipende da eta, comorbidita, riserva respiratoria, sepsi, ipossia e probabilita di patogeni resistenti.",
+  "etiologyEpidemiology": [
+    "Patogeni frequenti: Streptococcus pneumoniae, virus respiratori, Haemophilus influenzae, patogeni atipici e, in contesti selezionati, Legionella.",
+    "Non usare automaticamente la vecchia categoria HCAP: valutare invece fattori di rischio reali per MRSA o Pseudomonas.",
+    "Comorbidita, recente ospedalizzazione con antibiotici EV, colonizzazione nota e dati microbiologici locali cambiano la scelta empirica."
+  ],
+  "boxes": [
+    {
+      "title": "Criteri clinici e obiettivi",
+      "content": {
+        "segniSintomi": [
+          "Tosse, febbre o ipotermia, espettorato, dispnea, dolore pleuritico, astenia.",
+          "Tachipnea, ipossia, crepitii o reperti focali; negli anziani possibile presentazione paucisintomatica o confusione.",
+          "**Obiettivo in PS**: confermare probabilita clinica, stimare gravita, decidere domicilio/OBI/ricovero/intensiva, iniziare terapia e riconoscere sepsi."
+        ],
+        "redFlags": [
+          "**SpO2 bassa o necessita di ossigeno crescente**.",
+          "**Ipotensione, lattato elevato, alterazione dello stato mentale o segni di shock**.",
+          "**FR elevata, distress respiratorio, comorbidita cardiopolmonari importanti**.",
+          "**Sospetto empiema, ascesso, polmonite necrotizzante o mancata risposta clinica**.",
+          "**Immunosoppressione, gravidanza, fragilita, rischio aspirazione o patogeni resistenti**."
+        ],
+        "criteriDiGravita": [
+          "Usare PSI o CURB-65 come supporto, non come pilota automatico.",
+          "Valutare criteri maggiori/minori di gravita: ventilazione, shock, ipossia, multilobarita, uremia, leucopenia, piastrinopenia, ipotermia.",
+          "La decisione di ricovero integra score, saturazione, aderenza, supporto domiciliare e rischio di peggioramento."
+        ]
+      }
+    },
+    {
+      "title": "Diagnostica",
+      "content": {
+        "primoLivello": [
+          "Parametri vitali seriati, SpO2, esame respiratorio e cardiovascolare.",
+          "Rx torace se disponibile e coerente con quadro; ecografia polmonare puo aiutare nel setting rapido.",
+          "Emocromo, creatinina/eGFR, elettroliti, PCR/procalcitonina secondo protocollo, emogas se ipossia o distress.",
+          "Emocolture e coltura espettorato nei casi gravi o se rischio MRSA/Pseudomonas, secondo protocollo locale.",
+          "Test virali respiratori in stagione o se impatto su isolamento/terapia."
+        ],
+        "secondoLivello": [
+          "Antigene urinario pneumococco/Legionella in casi selezionati o severi.",
+          "TC torace se Rx dubbia, complicanze, diagnosi alternativa o mancata risposta.",
+          "Valutare diagnosi differenziali: scompenso, embolia polmonare, BPCO/asma, neoplasia, TBC, pneumonite ab ingestis."
+        ],
+        "score": [
+          "**PSI** utile per rischio e setting.",
+          "**CURB-65** rapido ma meno granulare.",
+          "**qSOFA/criteri sepsi** se infezione sistemica sospetta."
+        ]
+      }
+    },
+    {
+      "title": "Trattamento acuto",
+      "content": {
+        "condottaIniziale": [
+          "Ossigeno se ipossia, accesso venoso, fluidi se ipoperfusione, emocolture se indicate prima degli antibiotici senza ritardare terapia.",
+          "Antibiotico empirico secondo setting: domicilio, reparto, severa/intensiva; adattare a epidemiologia locale e rischio MRSA/Pseudomonas.",
+          "Rivalutare a 24-48 ore: stabilita clinica, ossigeno, febbre, tolleranza orale, risultati microbiologici."
+        ],
+        "antibioticiEmpiriciDaProtocollo": [
+          "**Ambulatoriale senza comorbidita rilevanti**: amoxicillina, doxiciclina o macrolide solo se resistenze locali adeguate, secondo protocollo.",
+          "**Ambulatoriale con comorbidita**: beta-lattamico + macrolide/doxiciclina oppure fluorochinolone respiratorio se appropriato.",
+          "**Ricovero non intensivo**: beta-lattamico + macrolide oppure fluorochinolone respiratorio, secondo protocollo locale.",
+          "**Severa/intensiva**: beta-lattamico + macrolide o beta-lattamico + fluorochinolone respiratorio; aggiungere copertura MRSA/Pseudomonas solo se fattori di rischio validi.",
+          "Evitare dosi fisse in app finche non hai un protocollo locale validato: funzione renale, QT, allergie e interazioni contano."
+        ],
+        "durataEDeEscalation": [
+          "Durata minima tipica almeno 5 giorni se stabilita clinica raggiunta; prolungare se complicanze, patogeni particolari o risposta lenta.",
+          "Passaggio EV-PO quando stabile, tollera orale e non ci sono ostacoli all'assorbimento.",
+          "De-escalation quando dati microbiologici e quadro clinico lo permettono."
+        ],
+        "ricoveroMonitoraggioIntensiva": [
+          "Intensiva/subintensiva se shock, ventilazione, ipossia severa, peggioramento rapido o criteri di severita.",
+          "Ricovero se comorbidita, fragilita, scarsa autonomia, ipossia, vomito/incapacita terapia orale, rischio sociale o score elevato.",
+          "Dimissione se stabile, saturazione adeguata, terapia orale praticabile, follow-up e istruzioni chiare."
+        ]
+      }
+    },
+    {
+      "title": "Indicazioni al paziente e follow-up",
+      "content": {
+        "educazione": [
+          "Spiegare tempi attesi: febbre e sintomi possono migliorare gradualmente, ma dispnea o peggioramento richiedono rivalutazione.",
+          "Bere, riposo, antipiretici se appropriati, evitare fumo, completare antibiotico se prescritto.",
+          "Valutare vaccinazioni pneumococco/influenza/COVID nel follow-up."
+        ],
+        "quandoTornareInPs": [
+          "**Dispnea in aumento, cianosi, confusione, sincope, dolore toracico importante**.",
+          "**Febbre persistente o peggioramento dopo 48-72 ore di terapia**.",
+          "**Vomito incoercibile, impossibilita ad assumere antibiotico, segni di disidratazione**."
+        ],
+        "followUp": [
+          "Controllo MMG o ambulatoriale entro pochi giorni se dimesso.",
+          "Imaging di controllo se persistenza sintomi, rischio neoplasia, fumatore/eta avanzata o indicazione locale."
+        ]
+      }
+    },
+    {
+      "title": "Note pratiche da PS",
+      "content": {
+        "coseDaNonDimenticare": [
+          "**La saturazione pesa piu della bella radiografia**: se il paziente desatura, non rassicurarti troppo.",
+          "Cercare sepsi, versamento pleurico complicato, embolia polmonare e scompenso quando il quadro non torna.",
+          "Non coprire MRSA/Pseudomonas per abitudine: serve un razionale documentato."
+        ],
+        "frasiOperative": [
+          "Quadro compatibile con polmonite comunitaria; valutata gravita clinica, ossigenazione e comorbidita.",
+          "**Avviata terapia empirica secondo protocollo locale**, con indicazione a rivalutazione se peggioramento o mancata risposta.",
+          "Dimissione/ricovero deciso in base a stabilita clinica, ossigenazione, autonomia e rischio di complicanze."
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-05-25",
+      "source": "ATS/IDSA CAP 2019 e strumenti ATS/IDSA aggiornati",
+      "fromVersion": "",
+      "toVersion": "0.1.0",
+      "note": "Prima bozza PanicDrive. Da revisionare manualmente e adattare al protocollo antibiotico locale."
+    }
+  ]
+}

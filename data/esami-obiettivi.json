@@ -1,0 +1,972 @@
+{
+  "version": "0.1.0-demo",
+  "updatedAt": "2026-05-20",
+  "templates": [
+    {
+      "id": "eo-generale",
+      "area": "Generale",
+      "title": "Esame obiettivo generale",
+      "summary": "Template sintetico per valutazione iniziale in PS.",
+      "tags": [
+        "eo",
+        "generale",
+        "triage"
+      ],
+      "phrases": [
+        "Paziente vigile e collaborante, orientato S-T.",
+        "Cute e mucose normocromiche, normoidratate.",
+        "Toni cardiaci validi, ritmici, non soffi patologici riscontrati all'auscultazione",
+        "Eupnoico, RRN su tutti gli ambiti, no RRA.",
+        "Addome trattabile, non dolente né dolorabile alla palpazione superficiale e profonda.",
+        "Non edemi declivi evidenti."
+      ]
+    },
+    {
+      "id": "eo-neurologico",
+      "area": "Neurologico",
+      "title": "Esame obiettivo neurologico",
+      "summary": "Template modulari per esame neurologico in Pronto Soccorso.",
+      "tags": [
+        "eo",
+        "neurologico",
+        "ps",
+        "ictus",
+        "tia",
+        "vertigine",
+        "cefalea",
+        "trauma cranico",
+        "meningite"
+      ],
+      "sections": [
+        {
+          "id": "neurologico-rapido",
+          "title": "Esame neurologico rapido",
+          "use_case": "Valutazione rapida in PS, paziente collaborante, assenza di deficit evidenti.",
+          "text": "Paziente vigile, collaborante, orientato S-T. GCS __/15. Eloquio fluente, comprensibile, non disartrico né afasico. Pupille isocoriche e normoreagenti. MOE conservata, non diplopia, non nistagmo evidente. Motilità facciale simmetrica: corrugamento della fronte, chiusura degli occhi, sorriso e gonfiaggio delle guance conservati bilateralmente. Lingua protrusa in asse. Forza globalmente conservata ai quattro arti. Mingazzini arti superiori negativa bilateralmente. Mingazzini sensibilizzato negativo bilateralmente. Mingazzini arti inferiori negativo bilateralmente. Sensibilità tattile grossolanamente conservata e simmetrica. Prova indice-naso corretta bilateralmente, senza dismetria. Marcia autonoma, non atassica, ove valutabile. Non evidenti deficit neurologici focali in atto."
+        },
+        {
+          "id": "neurologico-esteso",
+          "title": "Esame neurologico esteso",
+          "use_case": "Valutazione neurologica completa o paziente con sintomi neurologici non chiaramente focali.",
+          "text": "Paziente vigile, collaborante, orientato T/S/P. GCS __/15: E__ V__ M__. Eloquio fluente, comprensibile, non disartrico né afasico; comprensione conservata, esegue ordini semplici e complessi. Pupille isocoriche e isocicliche, normoreagenti alla luce direttamente e consensualmente. MOE conservata in tutte le direzioni di sguardo, non diplopia, non nistagmo. Campi visivi grossolanamente conservati al confronto. Motilità facciale simmetrica a riposo e durante attivazione: corrugamento della fronte, chiusura degli occhi contro resistenza, sorriso e gonfiaggio delle guance conservati bilateralmente. Sensibilità trigeminale grossolanamente conservata nei territori V1, V2 e V3. Udito grossolanamente conservato. Velo palatino simmetrico, ugola in asse. Lingua protrusa in asse, senza deviazioni né fascicolazioni. Elevazione delle spalle simmetrica contro resistenza. Tono muscolare conservato ai quattro arti. Forza conservata globalmente ai quattro arti, MRC 5/5 prossimale e distale bilateralmente, salvo ______. Mingazzini arti superiori negativa bilateralmente. Mingazzini sensibilizzato negativo bilateralmente. Mingazzini arti inferiori negativo bilateralmente. Sensibilità tattile, dolorifica e propriocettiva grossolanamente conservata e simmetrica ai quattro arti. ROT presenti e simmetrici bilateralmente. Riflesso cutaneo-plantare in flessione bilateralmente, non Babinski. Prove indice-naso e tallone-ginocchio corrette bilateralmente, senza dismetria. Non adiadococinesia. Romberg negativo, ove eseguibile. Marcia autonoma, non atassica. Nuca libera, non rigidità nucale; Kernig e Brudzinski negativi ove valutabili. Non evidenti deficit neurologici focali in atto."
+        },
+        {
+          "id": "neurologico-ictus-tia",
+          "title": "Screening ictus/TIA",
+          "use_case": "Deficit focale acuto, sospetto TIA, sospetto ictus ischemico/emorragico.",
+          "text": "Paziente vigile/collaborante/orientato, GCS __/15. Esordio sintomi alle ore __:__; ultimo momento noto in benessere alle ore __:__. Eloquio fluente/non fluente; disartria assente/presente; afasia assente/presente, espressiva/recettiva/globale. Sguardo in asse, non deviazione coniugata. MOE conservata/limitata. Campi visivi grossolanamente conservati/emianopsia ______. Pupille isocoriche e reagenti. Motilità facciale simmetrica/asimmetria centrale dx/sx. Lingua in asse/deviata verso ______. Mingazzini arti superiori negativo/positivo a dx/sx. Mingazzini sensibilizzato negativo/positivo a dx/sx. Mingazzini arti inferiori negativo/positivo a dx/sx. Deficit stenico MRC __/5 a carico di ______. Sensibilità tattile/dolorifica conservata/ridotta a carico di ______. Prova indice-naso conservata/dismetrica a dx/sx. Atassia assente/presente. Neglect assente/presente. NIHSS stimato: __. Quadro compatibile/non compatibile con deficit neurologico focale acuto."
+        },
+        {
+          "id": "neurologico-nervi-cranici-rapido",
+          "title": "Nervi cranici rapidi",
+          "use_case": "Check rapido dei nervi cranici in PS.",
+          "text": "Pupille isocoriche e normoreagenti. MOE conservata nei principali assi di sguardo, non diplopia, non nistagmo. Campo visivo grossolanamente conservato al confronto. Motilità facciale simmetrica: solleva entrambe le sopracciglia, chiude gli occhi contro resistenza, mostra i denti/sorride, gonfia le guance senza fuga d'aria. Sensibilità del volto grossolanamente simmetrica nei territori trigeminali. Lingua protrusa in asse. Velo palatino simmetrico, ugola in asse ove valutabile. Elevazione delle spalle simmetrica contro resistenza."
+        },
+        {
+          "id": "neurologico-prove-motorie-ps",
+          "title": "Prove motorie da PS",
+          "use_case": "Valutazione rapida di deficit stenici fini o grossolani.",
+          "text": "Forza segmentaria conservata ai quattro arti, MRC 5/5 bilateralmente, salvo ______. Mingazzini arti superiori: paziente mantiene entrambi gli arti superiori estesi, non caduta né pronazione patologica; prova negativa bilateralmente/positiva a dx/sx. Mingazzini sensibilizzato: prova eseguita a occhi chiusi con arti superiori estesi e supinati; non slivellamento, non pronazione, non deficit latente evidente/positiva a dx/sx. Mingazzini arti inferiori: paziente mantiene entrambi gli arti inferiori sollevati a ginocchia flesse; prova negativa bilateralmente/positiva a dx/sx. Non deficit stenici focali evidenti."
+        },
+        {
+          "id": "neurologico-coordinazione",
+          "title": "Coordinazione e marcia",
+          "use_case": "Valutazione cerebellare, vertigine, instabilità, sospetta atassia.",
+          "text": "Prova indice-naso eseguita correttamente bilateralmente, senza dismetria né tremore intenzionale. Prova tallone-ginocchio conservata bilateralmente, ove eseguibile. Prono-supinazione rapida conservata, non adiadococinesia. Romberg negativo/positivo/non eseguibile. Marcia autonoma, a base non allargata, non atassica, senza lateropulsione. Tandem gait conservato/instabile/non eseguibile."
+        },
+        {
+          "id": "neurologico-vertigine",
+          "title": "Vertigine",
+          "use_case": "Vertigine, instabilità, nausea/vomito con sospetto neurologico.",
+          "text": "Paziente vigile, collaborante, orientato. Eloquio fluente, non disartrico né afasico. Pupille isocoriche e reagenti. MOE conservata; nistagmo assente/presente, direzione ______, spontaneo/evocato, esauribile/non esauribile. Non diplopia. Motilità facciale simmetrica, lingua in asse. Forza conservata ai quattro arti; Mingazzini arti superiori e inferiori negativi bilateralmente. Sensibilità grossolanamente conservata. Indice-naso negativo per dismetria. Romberg negativo/positivo. Marcia autonoma/non autonoma; atassia assente/presente; lateropulsione verso ______. Non evidenti altri deficit neurologici focali."
+        },
+        {
+          "id": "neurologico-trauma-cranico",
+          "title": "Trauma cranico",
+          "use_case": "Trauma cranico minore/maggiore, caduta, paziente anticoagulato.",
+          "text": "Paziente vigile/soporoso/confuso, collaborante/non collaborante. GCS __/15: E__ V__ M__. Amnesia dell'evento assente/presente. Perdita di coscienza negata/riferita. Vomito assente/presente. Cefalea assente/presente. Pupille isocoriche e normoreagenti/anisocoria ______. MOE conservata/limitata. Eloquio fluente/non fluente, disartria assente/presente. Motilità facciale simmetrica. Lingua in asse. Motilità spontanea presente ai quattro arti. Forza MRC __/5 a carico di ______. Mingazzini arti superiori e inferiori negativo/positivo a dx/sx. Sensibilità grossolanamente conservata e simmetrica. Non segni neurologici focali evidenti al momento della valutazione. Indicata rivalutazione neurologica seriata in base al quadro clinico."
+        },
+        {
+          "id": "neurologico-meningite-encefalite",
+          "title": "Meningite / encefalite",
+          "use_case": "Febbre, cefalea, rigidità nucale, alterazione dello stato mentale, crisi epilettica.",
+          "text": "Paziente vigile/confuso/soporoso, collaborante/non collaborante. GCS __/15. Orientamento T/S/P conservato/alterato. Eloquio fluente/non fluente, disartria assente/presente. Pupille isocoriche e reagenti. MOE conservata. Non deficit dei nervi cranici grossolanamente evidenti. Forza globalmente conservata ai quattro arti/non valutabile/deficit ______. Sensibilità grossolanamente conservata/non valutabile. Nuca libera/rigidità nucale presente. Kernig negativo/positivo. Brudzinski negativo/positivo. Fotofobia assente/presente. Crisi convulsive riferite/negate. Quadro neurologico da correlare con febbre, cefalea, alterazione dello stato mentale e indicazione a percorso diagnostico-terapeutico urgente."
+        },
+        {
+          "id": "neurologico-non-collaborante",
+          "title": "Paziente non collaborante",
+          "use_case": "Agitazione, sopore, intossicazione, demenza, barriera linguistica, dolore severo.",
+          "text": "EO neurologico limitato da scarsa collaborazione/agitazione/sopore/intossicazione/barriera linguistica/dolore. Paziente vigile/soporoso/agitato. GCS __/15: E__ V__ M__. Pupille isocoriche/anisocoriche, reagenti/non reagenti. MOE non completamente valutabile/conservata grossolanamente. Motilità facciale grossolanamente simmetrica/non valutabile. Motilità spontanea presente ai quattro arti/simmetrica/asimmetrica. Risposta allo stimolo doloroso presente e simmetrica/asimmetrica, prevalente a carico di ______. Non valutabili in modo attendibile linguaggio, sensibilità, coordinazione, Romberg e marcia. Non rigidità nucale evidente ove valutabile. Necessaria rivalutazione neurologica seriata appena le condizioni cliniche lo consentano."
+        }
+      ]
+    },
+    {
+      "id": "eo-ortopedico",
+      "slug": "esame-ortopedico-ps",
+      "area": "Ortopedico",
+      "title": "Esame obiettivo ortopedico dettagliato in Pronto Soccorso",
+      "summary": "Esame ortopedico distrettuale per PS con red flags, valutazione neurovascolare, manovre specifiche e frasi rapide.",
+      "version": "0.1.0",
+      "updatedAt": "2026-05-20",
+      "lastManualReview": "non revisionato",
+      "safetyNotice": "**Strumento di supporto**: non sostituisce giudizio clinico, protocolli trauma locali, valutazione neurovascolare seriata e indicazione a imaging/consulenza specialistica.",
+      "sources": [
+        {
+          "label": "Shoulder examination",
+          "society": "Stanford Medicine 25",
+          "year": "consultato 2026",
+          "reference": "Shoulder Exam Tutorial"
+        },
+        {
+          "label": "Knee pain initial evaluation",
+          "society": "AAFP",
+          "year": "2018",
+          "reference": "Knee Pain in Adults and Adolescents: The Initial Evaluation"
+        },
+        {
+          "label": "Acute ankle sprain evaluation",
+          "society": "AAFP",
+          "year": "2006",
+          "reference": "Acute Ankle Sprain: An Update"
+        },
+        {
+          "label": "Knee effusion",
+          "society": "NCBI Bookshelf/StatPearls",
+          "year": "2024",
+          "reference": "Knee Effusion"
+        },
+        {
+          "label": "Carpal tunnel syndrome",
+          "society": "AAOS OrthoInfo",
+          "year": "consultato 2026",
+          "reference": "Carpal Tunnel Syndrome"
+        }
+      ],
+      "tags": [
+        "eo",
+        "ortopedico",
+        "trauma",
+        "ps",
+        "obi",
+        "rachide",
+        "spalla",
+        "braccio",
+        "gomito",
+        "polso",
+        "mano",
+        "anca",
+        "ginocchio",
+        "caviglia",
+        "piede"
+      ],
+      "sections": [
+        {
+          "id": "ortopedico-principi-generali",
+          "title": "Principi generali dell'esame ortopedico in PS",
+          "defaultOpen": false,
+          "use_case": "Pronto Soccorso, Trauma minore, Trauma maggiore dopo stabilizzazione, OBI",
+          "content": {
+            "approccio": [
+              "**Prima stabilità, poi dettaglio**: ABCDE se trauma maggiore, analgesia adeguata, esposizione del segmento, confronto controlaterale.",
+              "**Ispeziona, palpa, mobilizza, testa, rivaluta**: aspetto, deformità, edema, ecchimosi, ferite, dolore puntiforme, ROM attivo/passivo, forza, sensibilità, polsi, refill.",
+              "**Non forzare manovre speciali** se sospetta frattura, lussazione, lesione vascolare, dolore ingestibile o paziente non collaborante.",
+              "**Neurovascolare prima e dopo** riduzione, immobilizzazione o manovra dolorosa."
+            ],
+            "documentazioneMinima": [
+              "Sede del dolore e meccanismo traumatico.",
+              "Deformità, ferite, esposizione ossea o sospetta articolazione aperta.",
+              "ROM attivo/passivo se valutabile.",
+              "Punti di dolorabilità ossea.",
+              "Stato neurovascolare distale: polsi, refill, sensibilità, motricità.",
+              "Manovre speciali positive/negative solo se eseguite in sicurezza."
+            ],
+            "redFlagsGenerali": [
+              "**Deficit neurovascolare**: polso assente, refill lento, pallore/freddo, deficit motorio o sensitivo nuovo.",
+              "**Sospetta sindrome compartimentale**: dolore sproporzionato, dolore allo stiramento passivo, parestesie, tensione compartimentale.",
+              "**Frattura esposta o ferita articolare**.",
+              "**Lussazione non ridotta o sospetta frattura-lussazione**.",
+              "**Dolore assiale rachideo + deficit neurologico/sfinterico**.",
+              "**Trauma ad alta energia, anticoagulazione, immunosoppressione, febbre o sospetta artrite settica**."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-schema-rapido",
+          "title": "Schema rapido in PS",
+          "defaultOpen": true,
+          "content": {
+            "items": [
+              "**1. Guarda**: deformità, edema, ecchimosi, ferite, postura antalgica.",
+              "**2. Tocca**: dolore osseo puntiforme, crepitio, calore, versamento.",
+              "**3. Muovi**: ROM attivo, poi passivo se sicuro.",
+              "**4. Testa**: forza, sensibilità, polsi, manovre specifiche solo se non sospetti frattura/lussazione instabile.",
+              "**5. Decidi**: imaging, immobilizzazione, analgesia, riduzione, consulenza, dimissione."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-01-rachide",
+          "title": "Rachide cervicale, dorsale e lombare",
+          "defaultOpen": false,
+          "use_case": "Rachide",
+          "content": {
+            "redFlags": [
+              "**Trauma ad alta energia** o dolore mediano vertebrale.",
+              "**Deficit neurologico**: forza, sensibilità, riflessi, marcia, sfinteri.",
+              "**Sospetta cauda equina**: anestesia a sella, ritenzione/incontinenza, deficit bilaterali.",
+              "**Febbre, immunosoppressione, uso EV droghe, neoplasia, calo ponderale**."
+            ],
+            "ispezione": [
+              "Allineamento, postura antalgica, rigidità, scoliosi/alterazioni curve.",
+              "Segni traumatici: ecchimosi, abrasioni, seat-belt sign."
+            ],
+            "palpazione": [
+              "Processi spinosi: dolore mediano puntiforme.",
+              "Paravertebrali: contrattura, trigger dolorosi.",
+              "Bacino e sacro se trauma o lombalgia irradiata."
+            ],
+            "romFunzione": [
+              "ROM cervicale/lombare solo se trauma escluso o paziente già valutato.",
+              "Flessione, estensione, inclinazione laterale, rotazione.",
+              "Valutare dolore irradiato, blocco antalgico, impossibilità alla stazione eretta."
+            ],
+            "neurovascolare": [
+              "Forza segmentaria arti superiori/inferiori.",
+              "Sensibilità dermatomeri principali.",
+              "Riflessi osteotendinei se indicato.",
+              "Segni sfinterici se lombalgia neurologica."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Straight Leg Raise / Lasègue",
+                "how": "Paziente supino, solleva arto inferiore esteso.",
+                "positive": "Dolore radicolare sotto il ginocchio tra circa 30-70°.",
+                "suggests": "Irritazione radicolare lombosacrale.",
+                "avoidIf": "Sospetta frattura bacino/femore."
+              },
+              {
+                "name": "Slump test",
+                "how": "Seduto, flessione rachide/capo, estensione ginocchio e dorsiflessione piede.",
+                "positive": "Riproduzione dolore radicolare modificata dal rilascio cervicale.",
+                "suggests": "Tensione neurale/radicolopatia.",
+                "avoidIf": "Trauma rachideo non escluso."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Deficit neurologico o dolore mediano post-trauma.",
+              "Red flags infettive/neoplastiche.",
+              "Sospetta frattura osteoporotica.",
+              "Sospetta cauda equina: **urgenza**."
+            ],
+            "frasiRapideEO": [
+              "Rachide in asse, non deformità evidenti.",
+              "Dolorabilità paravertebrale senza dolore mediano vertebrale.",
+              "Motilità conservata/limitata dal dolore.",
+              "Esame neurovascolare periferico nei limiti, assenza di deficit motori o sensitivi evidenti."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-02-spalla",
+          "title": "Spalla e cingolo scapolare",
+          "defaultOpen": false,
+          "use_case": "Spalla",
+          "content": {
+            "redFlags": [
+              "**Lussazione gleno-omerale**: deformità, braccio atteggiato, impossibilità al movimento.",
+              "**Deficit nervo ascellare**: ipoestesia regione deltoidea o deficit abduzione.",
+              "**Frattura prossimale o clavicola scomposta**, cute minacciata.",
+              "**Dolore toracico/dispnea** associati: non chiamarlo \"spalla\" per pigrizia."
+            ],
+            "ispezione": [
+              "Simmetria spalle, profilo deltoideo, clavicola, AC, scapola.",
+              "Deformità \"spallina\" in lussazione anteriore.",
+              "Ecchimosi, edema, ferite, atrofia deltoide/sovraspinato."
+            ],
+            "palpazione": [
+              "Clavicola, articolazione acromion-claveare, acromion, coracoide.",
+              "Testa omerale, tuberosità maggiore, solco bicipitale.",
+              "Scapola e margine vertebrale se trauma."
+            ],
+            "romFunzione": [
+              "ROM attivo: elevazione anteriore, abduzione, extrarotazione, intrarotazione.",
+              "ROM passivo: distinguere rigidità vera da deficit di forza/dolore.",
+              "Valutare painful arc 60-120°."
+            ],
+            "neurovascolare": [
+              "Nervo ascellare: sensibilità regimental badge, abduzione deltoide.",
+              "Nervo radiale/mediano/ulnare distalmente.",
+              "Polso radiale, refill, temperatura mano."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Jobe / Empty can",
+                "how": "Braccia a 90° sul piano scapolare, pollici verso il basso, resistenza verso il basso.",
+                "positive": "Dolore/debolezza.",
+                "suggests": "Sovraspinato/cuffia."
+              },
+              {
+                "name": "External Rotation Resistance",
+                "how": "Gomiti flessi 90° aderenti al tronco, extrarotazione contro resistenza.",
+                "positive": "Debolezza/dolore.",
+                "suggests": "Infraspinato/teres minor."
+              },
+              {
+                "name": "Lift-off / Belly-press",
+                "how": "Mano dietro schiena e spinta in estensione, oppure mano sull'addome e pressione.",
+                "positive": "Incapacità/dolore/debolezza.",
+                "suggests": "Sottoscapolare."
+              },
+              {
+                "name": "Neer",
+                "how": "Elevazione passiva anteriore con scapola stabilizzata.",
+                "positive": "Dolore subacromiale.",
+                "suggests": "Impingement/subacromiale."
+              },
+              {
+                "name": "Hawkins-Kennedy",
+                "how": "Spalla e gomito a 90°, intrarotazione passiva.",
+                "positive": "Dolore.",
+                "suggests": "Impingement."
+              },
+              {
+                "name": "Cross-body adduction / Scarf",
+                "how": "Braccio a 90° flessione, adduzione orizzontale forzata.",
+                "positive": "Dolore localizzato AC.",
+                "suggests": "Patologia acromion-claveare."
+              },
+              {
+                "name": "Apprehension + Relocation",
+                "how": "Abduzione/extrarotazione; poi pressione posteriore sulla testa omerale.",
+                "positive": "Apprehension che migliora con relocation.",
+                "suggests": "Instabilità anteriore."
+              },
+              {
+                "name": "Speed / Yergason",
+                "how": "Flessione spalla contro resistenza a gomito esteso; supinazione contro resistenza.",
+                "positive": "Dolore solco bicipitale.",
+                "suggests": "Tendine capo lungo bicipite."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Trauma con dolore osseo puntiforme, deformità, impotenza funzionale.",
+              "Sospetta lussazione: RX pre/post riduzione secondo contesto.",
+              "Deficit neurovascolare.",
+              "Trauma clavicola con cute minacciata o scomposizione importante.",
+              "Deficit cuffia acuto post-traumatico in paziente attivo."
+            ],
+            "frasiRapideEO": [
+              "Spalla in asse, non deformità evidenti.",
+              "Dolorabilità a carico di [sede].",
+              "ROM attivo/passivo [conservato/limitato dal dolore].",
+              "Test cuffia: Jobe [neg/pos], extrarotazione contro resistenza [neg/pos], lift-off/belly press [neg/pos].",
+              "Test AC cross-body [neg/pos]. Nervo ascellare e polso radiale conservati."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-03-braccio",
+          "title": "Braccio e omero",
+          "defaultOpen": false,
+          "use_case": "Braccio",
+          "content": {
+            "redFlags": [
+              "**Deformità o instabilità dell'omero**.",
+              "**Deficit nervo radiale**: impossibilità estensione polso/dita, ipoestesia dorso prima commissura.",
+              "**Ferita profonda o sospetta frattura esposta**.",
+              "**Dolore sproporzionato/compartimentale**."
+            ],
+            "ispezione": [
+              "Deformità, accorciamento, rotazione, ecchimosi, edema.",
+              "Ferite, esposizione ossea, ematoma in espansione."
+            ],
+            "palpazione": [
+              "Diafisi omerale lungo tutto il decorso.",
+              "Deltoide, bicipite, tricipite, inserzioni tendinee.",
+              "Crepitio solo se inevitabile."
+            ],
+            "romFunzione": [
+              "Spalla e gomito se sicuro.",
+              "Valutare contrazione bicipite/tricipite, dolore con movimento attivo."
+            ],
+            "neurovascolare": [
+              "Nervo radiale: estensione polso/dita, sensibilità dorso prima commissura.",
+              "Nervo mediano: opposizione pollice, sensibilità indice.",
+              "Nervo ulnare: abduzione dita, sensibilità mignolo.",
+              "Polso radiale/ulnare, refill."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Test funzionale bicipite",
+                "how": "Flessione gomito e supinazione contro resistenza.",
+                "positive": "Dolore/debolezza o deformità Popeye.",
+                "suggests": "Lesione bicipite."
+              },
+              {
+                "name": "Test funzionale tricipite",
+                "how": "Estensione gomito contro resistenza.",
+                "positive": "Deficit estensione.",
+                "suggests": "Lesione tricipite/nervo radiale alto."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Trauma con dolore diafisario/deformità.",
+              "Deficit radiale.",
+              "Ferita profonda/esposta.",
+              "Compromissione vascolare."
+            ],
+            "frasiRapideEO": [
+              "Braccio senza deformità evidente.",
+              "Dolorabilità su [sede].",
+              "Motilità gomito/spalla valutabile nei limiti del dolore.",
+              "Nervo radiale, mediano, ulnare conservati; polso radiale presente."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-04-gomito",
+          "title": "Gomito",
+          "defaultOpen": false,
+          "use_case": "Gomito",
+          "content": {
+            "redFlags": [
+              "**Lussazione gomito**: deformità, blocco, dolore importante.",
+              "**Deficit nervoso o vascolare**: mediano/ulnare/radiale, arteria brachiale.",
+              "**Dolore olecrano/capitello radiale post-trauma con limitazione prono-supinazione**.",
+              "**Sospetta artrite settica**: febbre, calore, dolore passivo severo."
+            ],
+            "ispezione": [
+              "Deformità, edema, ecchimosi, atteggiamento in flessione.",
+              "Ferite posteriori o laterali, sospetta esposizione articolare."
+            ],
+            "palpazione": [
+              "Olecrano, epicondilo mediale/laterale, capitello radiale.",
+              "Palpare capitello durante prono-supinazione.",
+              "Fossa cubitale e tendine bicipitale distale."
+            ],
+            "romFunzione": [
+              "Flessione-estensione.",
+              "Prono-supinazione: spesso sensibile per frattura capitello radiale.",
+              "Valutare blocco meccanico."
+            ],
+            "neurovascolare": [
+              "Nervo ulnare: sensibilità mignolo, abduzione dita.",
+              "Nervo mediano/AIN: OK sign, flessione interfalangea pollice-indice.",
+              "Nervo radiale/PIN: estensione polso/dita.",
+              "Polsi, refill."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Valgo stress test",
+                "how": "Gomito 20-30° flessione, stress in valgo.",
+                "positive": "Dolore/lassità mediale.",
+                "suggests": "Legamento collaterale ulnare."
+              },
+              {
+                "name": "Varo stress test",
+                "how": "Gomito 20-30° flessione, stress in varo.",
+                "positive": "Dolore/lassità laterale.",
+                "suggests": "Legamento collaterale laterale."
+              },
+              {
+                "name": "Hook test bicipite distale",
+                "how": "Gomito flesso 90°, supinazione; provare ad agganciare tendine bicipitale da laterale.",
+                "positive": "Tendine non palpabile/agganciabile.",
+                "suggests": "Rottura bicipite distale."
+              },
+              {
+                "name": "Cozen",
+                "how": "Estensione polso contro resistenza con gomito esteso.",
+                "positive": "Dolore epicondilo laterale.",
+                "suggests": "Epicondilalgia laterale, non priorità PS salvo differenziale."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Trauma + impossibilità estensione completa o dolore osseo.",
+              "Sospetta lussazione/frattura.",
+              "Limitazione prono-supinazione con dolore capitello.",
+              "Deficit neurovascolare."
+            ],
+            "frasiRapideEO": [
+              "Gomito in asse, non deformità.",
+              "Dolorabilità su [olecrano/capitello/epicondilo].",
+              "Flesso-estensione e prono-supinazione [conservate/limitate].",
+              "Valgo/varo stress [neg/pos se eseguiti]. Neurovascolare distale conservato."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-05-polso-mano",
+          "title": "Avambraccio, polso e mano",
+          "defaultOpen": false,
+          "use_case": "Polso-mano",
+          "content": {
+            "redFlags": [
+              "**Sospetta frattura scafoide**: dolore tabacchiera anatomica, tubercolo scafoide, compressione assiale pollice.",
+              "**Deficit tendineo**: impossibilità a flettere/estendere un dito.",
+              "**Lesione nervosa**: mediano, ulnare, radiale.",
+              "**Ferita da morso, ferita profonda, sospetta lesione tendinea o articolare**.",
+              "**Sindrome compartimentale mano/avambraccio**."
+            ],
+            "ispezione": [
+              "Deformità polso/dita, rotazione dita, cascata digitale.",
+              "Edema, ecchimosi, ferite, amputazioni, subungueale.",
+              "Allineamento unghie in flessione: cerca malrotazioni."
+            ],
+            "palpazione": [
+              "Radio/ulna distali, stiloidi, DRUJ.",
+              "Tabacchiera anatomica, tubercolo scafoide, base I metacarpo.",
+              "Metacarpi/falangi, articolazioni MCP/PIP/DIP.",
+              "Tendini flessori/estensori, pulegge, guaine se ferite."
+            ],
+            "romFunzione": [
+              "Polso: flessione, estensione, deviazione radiale/ulnare, prono-supinazione.",
+              "Mano: pugno completo, estensione completa, opposizione pollice, pinza.",
+              "Ogni dito: FDS/FDP/estensore isolati."
+            ],
+            "neurovascolare": [
+              "Mediano: sensibilità polpastrello indice, opposizione pollice.",
+              "Ulnare: sensibilità mignolo, abduzione/adduzione dita.",
+              "Radiale: sensibilità dorso prima commissura, estensione polso/dita.",
+              "Vascolare: refill polpastrelli, temperatura, polso radiale/ulnare se indicato."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Test FDP",
+                "how": "Blocca PIP in estensione, chiedi flessione DIP.",
+                "positive": "Incapacità.",
+                "suggests": "Lesione flessore profondo."
+              },
+              {
+                "name": "Test FDS",
+                "how": "Blocca le altre dita in estensione, chiedi flessione PIP del dito testato.",
+                "positive": "Incapacità.",
+                "suggests": "Lesione flessore superficiale."
+              },
+              {
+                "name": "Elson",
+                "how": "PIP flessa 90° sul bordo tavolo, estensione PIP contro resistenza; valuta DIP.",
+                "positive": "Debolezza PIP con rigidità estensione DIP.",
+                "suggests": "Lesione bandelletta centrale."
+              },
+              {
+                "name": "Finkelstein/Eichhoff",
+                "how": "Pollice nel pugno e deviazione ulnare del polso.",
+                "positive": "Dolore stiloide radiale.",
+                "suggests": "Tenosinovite De Quervain."
+              },
+              {
+                "name": "Tinel carpale",
+                "how": "Percussione sul nervo mediano al polso.",
+                "positive": "Parestesie territorio mediano.",
+                "suggests": "Sindrome tunnel carpale, da interpretare nel contesto."
+              },
+              {
+                "name": "Phalen",
+                "how": "Flessione massima polsi mantenuta.",
+                "positive": "Parestesie territorio mediano.",
+                "suggests": "Tunnel carpale, non diagnostico da solo."
+              },
+              {
+                "name": "Watson scaphoid shift",
+                "how": "Pressione su tubercolo scafoide durante deviazione ulnare-radiale.",
+                "positive": "Clunk/dolore.",
+                "suggests": "Instabilità scafolunata; evitare se trauma acuto molto doloroso."
+              },
+              {
+                "name": "Compressione assiale pollice",
+                "how": "Compressione lungo asse del primo raggio.",
+                "positive": "Dolore scafoide.",
+                "suggests": "Possibile frattura scafoide."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Dolore tabacchiera/tubercolo scafoide anche con RX negativa: immobilizza e rivaluta/imaging.",
+              "Deformità, malrotazione, deficit tendineo.",
+              "Ferite profonde, morsi, sospetta articolazione aperta.",
+              "Deficit neurovascolare.",
+              "Lesione ungueale complessa o ematoma subungueale con sospetta frattura."
+            ],
+            "frasiRapideEO": [
+              "Polso/mano senza deformità evidente.",
+              "Cascata digitale conservata, assenza di malrotazioni.",
+              "Flessori/estensori delle dita integri alla valutazione.",
+              "Sensibilità mediano-ulnare-radiale conservata, refill valido.",
+              "Dolorabilità [sede]; tabacchiera anatomica [dolente/non dolente]."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-06-bacino-anca",
+          "title": "Bacino e anca",
+          "defaultOpen": false,
+          "use_case": "Bacino-anca",
+          "content": {
+            "redFlags": [
+              "**Trauma ad alta energia con dolore pelvico**: non stressare ripetutamente il bacino.",
+              "**Arto accorciato/extrarotato**: sospetta frattura collo femore.",
+              "**Incapacità a caricare** dopo trauma.",
+              "**Febbre + anca dolente + dolore ai movimenti passivi**: sospetta artrite settica.",
+              "**Deficit neurovascolare arto inferiore**."
+            ],
+            "ispezione": [
+              "Posizione arto: accorciamento, extrarotazione, flessione.",
+              "Ecchimosi inguinale/perineale, ematomi, ferite.",
+              "Capacità a stare in piedi e camminare se sicuro."
+            ],
+            "palpazione": [
+              "Cresta iliaca, sinfisi, grandi trocanteri.",
+              "Inguine, pube, ischio se dolore localizzato.",
+              "Palpazione bacino delicata, una sola volta se trauma maggiore."
+            ],
+            "romFunzione": [
+              "Anca: flessione, estensione, abduzione, adduzione, intrarotazione/extrarotazione.",
+              "Log-roll: rotazione passiva dell'arto esteso.",
+              "Valutare dolore con carico."
+            ],
+            "neurovascolare": [
+              "Femorale: estensione ginocchio/sensibilità anteriore coscia.",
+              "Sciatico/peroneale/tibiale distalmente.",
+              "Polsi femorale/popliteo/pedidio/tibiale posteriore se trauma importante."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Log-roll test",
+                "how": "Rotazione interna/esterna passiva arto esteso.",
+                "positive": "Dolore inguinale/anca.",
+                "suggests": "Patologia intra-articolare/frattura occultabile."
+              },
+              {
+                "name": "FABER / Patrick",
+                "how": "Flessione, abduzione, extrarotazione; caviglia su ginocchio controlaterale.",
+                "positive": "Dolore inguinale o sacroiliaco.",
+                "suggests": "Anca/SI."
+              },
+              {
+                "name": "FADIR",
+                "how": "Flessione, adduzione, intrarotazione.",
+                "positive": "Dolore inguinale.",
+                "suggests": "Impingement femoro-acetabolare/labrum, meno PS ma utile se non trauma."
+              },
+              {
+                "name": "Trendelenburg",
+                "how": "Stazione monopodalica.",
+                "positive": "Caduta bacino controlaterale.",
+                "suggests": "Deficit abduttori/anca, solo se carico sicuro."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Incapacità a caricare, dolore inguinale post-trauma, anziano.",
+              "Trauma bacino ad alta energia.",
+              "Sospetta frattura collo femore anche con RX negativa: considerare TC/RM secondo percorso.",
+              "Febbre o sospetta artrite settica."
+            ],
+            "frasiRapideEO": [
+              "Bacino stabile alla valutazione delicata, senza dolore alla compressione se eseguita.",
+              "Anca senza deformità, ROM [conservato/limitato].",
+              "Log-roll [neg/pos]. Carico [possibile/non possibile].",
+              "Neurovascolare distale conservato."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-07-coscia",
+          "title": "Coscia",
+          "defaultOpen": false,
+          "use_case": "Coscia",
+          "content": {
+            "redFlags": [
+              "**Deformità femorale o accorciamento**.",
+              "**Ematoma importante o sospetta lesione vascolare**.",
+              "**Dolore sproporzionato/compartimentale**.",
+              "**Deficit estensione ginocchio o rottura quadricipitale sospetta**."
+            ],
+            "ispezione": [
+              "Deformità, tumefazione, ecchimosi, ferite.",
+              "Atteggiamento antalgico, incapacità al carico."
+            ],
+            "palpazione": [
+              "Diafisi femorale, quadricipite, ischiocrurali, adduttori.",
+              "Palpare gap tendinei se sospetta rottura."
+            ],
+            "romFunzione": [
+              "Anca e ginocchio se sicuro.",
+              "Straight leg raise attivo se sospetta apparato estensore."
+            ],
+            "neurovascolare": [
+              "Polsi distali, refill.",
+              "Sensibilità e motilità piede.",
+              "Valutare dolore a stiramento passivo se compartimento."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Straight Leg Raise attivo",
+                "how": "Paziente supino, solleva arto esteso.",
+                "positive": "Incapacità.",
+                "suggests": "Lesione apparato estensore, dolore/frattura."
+              },
+              {
+                "name": "Contrazione quadricipite",
+                "how": "Estensione ginocchio contro resistenza.",
+                "positive": "Deficit/dolore/gap.",
+                "suggests": "Lesione quadricipite o femorale."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Trauma importante con dolore coscia/deformità.",
+              "Ematoma espansivo.",
+              "Impossibilità carico.",
+              "Deficit neurovascolare."
+            ],
+            "frasiRapideEO": [
+              "Coscia senza deformità evidente.",
+              "Dolorabilità [sede], non tumefazione progressiva.",
+              "Estensione ginocchio contro resistenza [conservata/deficitaria].",
+              "Neurovascolare distale conservato."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-08-ginocchio",
+          "title": "Ginocchio",
+          "defaultOpen": false,
+          "use_case": "Ginocchio",
+          "content": {
+            "redFlags": [
+              "**Versamento rapido post-trauma**: sospetta emartro, LCA, frattura intra-articolare, lussazione ridotta.",
+              "**Impossibilità a caricare o estendere**.",
+              "**Sospetta lussazione ginocchio anche se autoridotta**: controlla vascolare seriato.",
+              "**Febbre, ginocchio caldo, dolore passivo severo**: artrite settica.",
+              "**Deficit apparato estensore**: impossibilità straight leg raise."
+            ],
+            "ispezione": [
+              "Allineamento varo/valgo, recurvatum, deformità.",
+              "Edema, ecchimosi, versamento, atrofia quadricipite.",
+              "Rotula alta/bassa, ferite."
+            ],
+            "palpazione": [
+              "Rotula, tendine quadricipitale e rotuleo.",
+              "Interlinea mediale/laterale.",
+              "Condili femorali, piatto tibiale, testa perone.",
+              "Poplite, LCM/LCL lungo decorso."
+            ],
+            "romFunzione": [
+              "Estensione completa, flessione.",
+              "Straight leg raise.",
+              "Cammino/carico se sicuro.",
+              "Blocco meccanico o pseudo-blocco da dolore."
+            ],
+            "neurovascolare": [
+              "Polso pedidio/tibiale posteriore, refill, temperatura.",
+              "Sensibilità piede.",
+              "Motilità dorsiflessione/alluce e plantarflessione.",
+              "Se sospetta lussazione: considerare ABI/valutazione vascolare secondo protocollo."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Stroke / bulge test",
+                "how": "Spremi liquido dal comparto mediale prossimale e osserva rigonfiamento mediale dopo spinta laterale.",
+                "positive": "Ondulazione/rigonfiamento.",
+                "suggests": "Piccolo versamento."
+              },
+              {
+                "name": "Patellar tap / ballottamento rotuleo",
+                "how": "Spingi liquido verso recesso sovrarotuleo, premi la rotula verso il femore.",
+                "positive": "Rotula galleggia e tocca il femore con tap.",
+                "suggests": "Versamento moderato-importante."
+              },
+              {
+                "name": "Lachman",
+                "how": "Ginocchio 20-30° flessione, stabilizza femore e traziona tibia anteriormente.",
+                "positive": "Aumentata traslazione/an endpoint molle.",
+                "suggests": "Lesione LCA."
+              },
+              {
+                "name": "Cassetto anteriore",
+                "how": "Ginocchio 90° flessione, piede stabilizzato, traziona tibia anteriormente.",
+                "positive": "Traslazione anteriore aumentata.",
+                "suggests": "LCA, meno sensibile acuto se contrazione."
+              },
+              {
+                "name": "Pivot shift",
+                "how": "Stress valgo e rotazione interna durante flesso-estensione.",
+                "positive": "Sublussazione/riduzione tibiale.",
+                "suggests": "Instabilità LCA; spesso poco tollerato in PS."
+              },
+              {
+                "name": "Cassetto posteriore",
+                "how": "Ginocchio 90°, spingi tibia posteriormente.",
+                "positive": "Traslazione posteriore aumentata/sag sign.",
+                "suggests": "Lesione LCP."
+              },
+              {
+                "name": "Stress in valgo",
+                "how": "Stress valgo a 30° e a 0°.",
+                "positive": "Dolore/lassità mediale.",
+                "suggests": "LCM; a 0° sospetta lesione complessa."
+              },
+              {
+                "name": "Stress in varo",
+                "how": "Stress varo a 30° e a 0°.",
+                "positive": "Dolore/lassità laterale.",
+                "suggests": "LCL/angolo posterolaterale."
+              },
+              {
+                "name": "McMurray",
+                "how": "Flesso-estensione con rotazione tibiale e stress varo/valgo.",
+                "positive": "Click doloroso/interlinea.",
+                "suggests": "Lesione meniscale."
+              },
+              {
+                "name": "Thessaly",
+                "how": "Paziente in carico, ginocchio 20° flesso, rotazioni tronco.",
+                "positive": "Dolore interlinea/catching.",
+                "suggests": "Menisco; evitare se trauma acuto doloroso o instabile."
+              },
+              {
+                "name": "Apprehension rotulea",
+                "how": "Traslazione laterale rotula con ginocchio lieve flessione.",
+                "positive": "Apprensione/dolore.",
+                "suggests": "Instabilità/lussazione rotulea."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Regole di Ottawa ginocchio se trauma: età ≥55, dolore testa perone, dolore rotula isolato, impossibilità flessione 90°, impossibilità a fare 4 passi.",
+              "Versamento rapido/emartro.",
+              "Impossibilità estensione attiva.",
+              "Instabilità importante o sospetta lussazione.",
+              "Febbre/gonfiore caldo: artrocentesi/consulenza."
+            ],
+            "frasiRapideEO": [
+              "Ginocchio in asse, non deformità.",
+              "Versamento [assente/lieve/moderato] con ballottamento rotuleo [neg/pos].",
+              "ROM [conservato/limitato], estensione attiva [conservata/deficitaria].",
+              "Lachman [neg/pos], cassetto posteriore [neg/pos], varo/valgo [stabile/dolente/lasso], McMurray/Thessaly [neg/pos se eseguiti].",
+              "Neurovascolare distale conservato."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-09-caviglia-piede",
+          "title": "Gamba, caviglia e piede",
+          "defaultOpen": false,
+          "use_case": "Caviglia-piede",
+          "content": {
+            "redFlags": [
+              "**Impossibilità a caricare 4 passi** dopo trauma.",
+              "**Dolore malleolare/navicolare/base V metatarso**.",
+              "**Deformità o sospetta lussazione**.",
+              "**Sospetta rottura tendine d'Achille**.",
+              "**Piede freddo/pallido o deficit neurologico**.",
+              "**Sospetta sindrome compartimentale del piede/gamba**."
+            ],
+            "ispezione": [
+              "Edema laterale/mediale, ecchimosi, deformità, appoggio.",
+              "Arco plantare, retropiede, allineamento avampiede.",
+              "Ferite, vescicole, esposizione, ematomi plantari."
+            ],
+            "palpazione": [
+              "Malleoli posteriore e apice.",
+              "Legamenti laterali: ATFL, CFL, PTFL.",
+              "Legamento deltoideo.",
+              "Base V metatarso, navicolare, Lisfranc/tarsometatarsali.",
+              "Tendine d'Achille e inserzione calcaneare.",
+              "Testa perone prossimale se trauma caviglia con sospetta Maisonneuve."
+            ],
+            "romFunzione": [
+              "Caviglia: dorsiflessione, plantarflessione, inversione, eversione.",
+              "Alluce e dita: estensione/flessione.",
+              "Carico e cammino se sicuro."
+            ],
+            "neurovascolare": [
+              "Polso pedidio e tibiale posteriore, refill dita.",
+              "Sensibilità dorso piede, pianta, primo spazio interdigitale.",
+              "Dorsiflessione alluce/piede, plantarflessione."
+            ],
+            "manovreSpecifiche": [
+              {
+                "name": "Ottawa Ankle Rules",
+                "how": "RX caviglia se dolore zona malleolare + dolore margine posteriore/apice malleolo mediale/laterale o incapacità 4 passi; RX piede se dolore mesopiede + navicolare/base V metatarso o incapacità 4 passi.",
+                "positive": "Criteri presenti.",
+                "suggests": "Indicazione a radiografia."
+              },
+              {
+                "name": "Anterior drawer ankle",
+                "how": "Stabilizza tibia, traziona calcagno/talo anteriormente con caviglia lieve plantarflessione.",
+                "positive": "Traslazione anteriore/dimple/dolore.",
+                "suggests": "Lesione ATFL."
+              },
+              {
+                "name": "Talar tilt",
+                "how": "Inversione del retropiede stabilizzando tibia.",
+                "positive": "Lassità/dolore rispetto controlaterale.",
+                "suggests": "CFL/legamenti laterali."
+              },
+              {
+                "name": "Squeeze test",
+                "how": "Compressione tibia-perone a metà gamba.",
+                "positive": "Dolore alla sindesmosi/caviglia.",
+                "suggests": "Distorsione alta/sindesmosi."
+              },
+              {
+                "name": "External rotation stress",
+                "how": "Ginocchio flesso, caviglia dorsiflessa, rotazione esterna piede.",
+                "positive": "Dolore sindesmosi.",
+                "suggests": "Lesione sindesmotica."
+              },
+              {
+                "name": "Thompson test",
+                "how": "Paziente prono o ginocchio flesso, compressione polpaccio.",
+                "positive": "Assenza di plantarflessione.",
+                "suggests": "Rottura tendine d'Achille."
+              },
+              {
+                "name": "Single heel rise",
+                "how": "Sollevamento monopodalico sull'avampiede.",
+                "positive": "Incapacità.",
+                "suggests": "Achille/tibiale posteriore; solo se sicuro."
+              },
+              {
+                "name": "Piano Lisfranc",
+                "how": "Dolore tarsometatarsale, ecchimosi plantare, stress abduzione/pronazione avampiede.",
+                "positive": "Dolore medio-piede/instabilità.",
+                "suggests": "Lesione Lisfranc: da non perdere."
+              }
+            ],
+            "quandoPensareAImagingConsulenza": [
+              "Criteri Ottawa positivi.",
+              "Deformità, sospetta frattura-lussazione.",
+              "Dolore base V metatarso/navicolare/Lisfranc.",
+              "Rottura Achille sospetta.",
+              "Sindesmosi sospetta o dolore gamba prossimale.",
+              "Deficit neurovascolare."
+            ],
+            "frasiRapideEO": [
+              "Caviglia/piede senza deformità evidente.",
+              "Dolorabilità su [ATFL/CFL/malleolo/base V/navicolare/Lisfranc].",
+              "Ottawa [neg/pos]. Anterior drawer [neg/pos], talar tilt [neg/pos], squeeze/external rotation [neg/pos].",
+              "Thompson [neg/pos]. Neurovascolare distale conservato."
+            ]
+          }
+        },
+        {
+          "id": "ortopedico-fonti-revisione",
+          "title": "Fonti e revisione",
+          "defaultOpen": false,
+          "content": {
+            "fonti": [
+              "Stanford Medicine 25 - Shoulder examination (consultato 2026): Shoulder Exam Tutorial",
+              "AAFP - Knee pain initial evaluation (2018): Knee Pain in Adults and Adolescents: The Initial Evaluation",
+              "AAFP - Acute ankle sprain evaluation (2006): Acute Ankle Sprain: An Update",
+              "NCBI Bookshelf/StatPearls - Knee effusion (2024): Knee Effusion",
+              "AAOS OrthoInfo - Carpal tunnel syndrome (consultato 2026): Carpal Tunnel Syndrome"
+            ],
+            "storico": [
+              "Versione 0.1.0 - aggiornato 2026-05-20 - ultima revisione manuale: non revisionato"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
